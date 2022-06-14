@@ -1,6 +1,7 @@
 package com.song.gomo.ui.shop
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,7 +19,6 @@ class ShopIntroduceFragment: ToolbarFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         binding = FragmentShopBinding.inflate(inflater, container, false)
         toolbarBinding = binding.toolbar
         initView()
