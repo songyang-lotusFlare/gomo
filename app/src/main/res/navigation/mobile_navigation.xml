@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/login">
+
+    <navigation android:id="@+id/navigation_home"
+        app:startDestination="@id/gomoHomeFragment">
+        <fragment
+            android:id="@+id/gomoHomeFragment"
+            android:name="com.song.gomo.ui.home.HomeFragment"
+            android:label="@string/title_home"
+            tools:layout="@layout/fragment_home" />
+    </navigation>
+
+    <navigation android:id="@+id/navigation_cred"
+        app:startDestination="@id/moCredsFragment">
+        <fragment
+            android:id="@+id/moCredsFragment"
+            android:name="com.song.gomo.ui.mocreds.MoCredsFragment"
+            android:label="@string/title_cred"
+            tools:layout="@layout/fragment_creds" />
+    </navigation>
+
+    <navigation android:id="@+id/navigation_shop"
+        app:startDestination="@id/shopFragment">
+        <fragment
+            android:id="@+id/shopFragment"
+            android:name="com.song.gomo.ui.shop.ShopFragment"
+            android:label="@string/title_shop"
+            tools:layout="@layout/fragment_shop" />
+    </navigation>
+
+    <navigation android:id="@+id/navigation_account"
+        app:startDestination="@id/accountFragment">
+        <fragment
+            android:id="@+id/accountFragment"
+            android:name="com.song.gomo.ui.account.AccountFragment"
+            android:label="@string/title_account"
+            tools:layout="@layout/fragment_creds" />
+    </navigation>
+
+    <navigation android:id="@+id/navigation_menu"
+        app:startDestination="@id/menuFragment">
+        <fragment
+            android:id="@+id/menuFragment"
+            android:name="com.song.gomo.ui.menu.MenuFragment"
+            android:label="@string/title_menu"
+            tools:layout="@layout/fragment_creds" />
+    </navigation>
+
+    <navigation android:id="@+id/login"
+        app:startDestination="@id/LoginFragment">
+        <fragment
+            android:id="@+id/LoginFragment"
+            android:name="com.song.gomo.ui.login.LoginFragment"
+            android:label="@string/login"
+            tools:layout="@layout/fragment_login" >
+            <action
+                android:id="@+id/action_loginFragment_to_shopIntroduceFragment"
+                app:destination="@id/ShopIntroduceFragment" />
+        </fragment>
+    </navigation>
+    <fragment
+        android:id="@+id/ShopIntroduceFragment"
+        android:name="com.song.gomo.ui.shop.ShopIntroduceFragment"
+        android:label="@string/label_fragment_shop_introduce"
+        tools:layout="@layout/fragment_shop" >
+    </fragment>
+    <action
+        android:id="@+id/action_global_home"
+        app:destination="@id/navigation_home"
+        app:popUpTo="@id/navigation_home">
+        <argument
+            android:name="isForceRefresh"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </action>
+    <action
+        android:id="@+id/action_global_shop"
+        app:destination="@id/ShopIntroduceFragment"
+        app:popUpTo="@id/ShopIntroduceFragment"/>
+</navigation>

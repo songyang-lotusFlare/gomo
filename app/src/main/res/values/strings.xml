@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">gomo</string>
+
+    <string name="label_fragment_shop_introduce">shopIntroduce</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_cred">Mo Creds</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_account">Account</string>
+    <string name="title_menu">Menu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="image_desc">image.</string>
+
+
+    <string name="login">login</string>
+    <string name="login_go">Let\'s go</string>
+    <string name="login_text_sub">Where can I find this?</string>
+    <string name="login_text_main">Insert SIM in device and enter your GOMO number?</string>
+    <string name="login_text_help">Help Center</string>
+    <string name="login_text_shop">Shop</string>
+    <string name="login_text_follow">Follow GOMO</string>
+    <string name="login_enter_title">No GOMO number yet?</string>
+    <string name="login_error_toast_mismatch">mismatch.</string>
+    <string name="login_title_main">Get started with GOMO</string>
+    <string name="login_label_1">get a new number</string>
+    <string name="login_label_2">keep my exciting number</string>
+
+
+    <string name="title_prompt">Prompt</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="exit">Are you sure you want to leave this app?</string>
+    <string name="loading">Loading\nplease wait.</string>
+
+    <string name="default_show">you click there ! </string>
+
+</resources>

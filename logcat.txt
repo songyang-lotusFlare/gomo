@@ -1,0 +1,824 @@
+--------- beginning of main
+06-10 14:36:44.873 D/CarrierSvcBindHelper(  589): No carrier app for: 0
+06-10 14:36:44.934 W/Icing   ( 1030): No valid account for uploading user actions
+--------- beginning of system
+06-10 14:36:44.953 I/ActivityTaskManager(  378): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.song.gomo/.MainActivity} from uid 2000
+06-10 14:36:44.980 E/system_server(  378): Invalid ID 0x00000000.
+06-10 14:36:44.993 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:44.993 I/chatty  (  378): uid=1000(system) Binder:378_11 identical 8 lines
+06-10 14:36:44.993 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:45.009 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:36:45.009 I/Icing   ( 1030): Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0
+06-10 14:36:45.010 I/Icing   ( 1030): IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+06-10 14:36:45.028 D/Zygote  (  176): Forked child process 27413
+06-10 14:36:45.028 W/Icing   ( 1030): No valid account for uploading user actions
+06-10 14:36:45.031 I/ActivityManager(  378): Start proc 27413:com.song.gomo/u0a151 for activity {com.song.gomo/com.song.gomo.MainActivity}
+06-10 14:36:45.038 I/com.song.gomo(27413): Late-enabling -Xcheck:jni
+06-10 14:36:45.048 I/Icing   ( 1030): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+06-10 14:36:45.072 E/com.song.gomo(27413): Unknown bits set in runtime_flags: 0x8000
+06-10 14:36:45.122 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:45.127 I/chatty  (  378): uid=1000(system) Binder:378_2 identical 28 lines
+06-10 14:36:45.127 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:45.137 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:45.137 I/chatty  (  378): uid=1000(system) android.anim identical 8 lines
+06-10 14:36:45.137 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:45.182 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:36:45.292 I/chatty  (  525): uid=10122(com.android.systemui) RenderThread identical 9 lines
+06-10 14:36:45.320 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:36:45.457 D/EGL_emulation(  697): eglMakeCurrent: 0x70627a9f20: ver 3 0 (tinfo 0x70b96c19a0)
+06-10 14:36:45.458 D/EGL_emulation( 1154): eglMakeCurrent: 0x70b97d8340: ver 3 0 (tinfo 0x70b9a9f880)
+06-10 14:36:45.533 I/FirebaseApp(27413): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+06-10 14:36:45.539 I/FirebaseCrashlytics(27413): Initializing Firebase Crashlytics 18.2.10 for com.song.gomo
+06-10 14:36:45.544 D/FirebaseCrashlytics(27413): Crashlytics automatic data collection ENABLED by global Firebase setting.
+06-10 14:36:45.553 D/FirebaseCrashlytics(27413): AnalyticsConnector now available.
+06-10 14:36:45.559 D/FirebaseCrashlytics(27413): Registered Firebase Analytics listener.
+06-10 14:36:45.560 D/FirebaseCrashlytics(27413): Mapping file ID is: 00000000000000000000000000000000
+06-10 14:36:45.567 D/FirebaseCrashlytics(27413): Checking for cached settings...
+06-10 14:36:45.574 D/FirebaseCrashlytics(27413): Loaded cached settings: {"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"62a2e4a05d55663bb0f34454","bundle_id":"com.song.gomo"},"on_demand_upload_rate_per_minute":10,"on_demand_backoff_base":1.2,"on_demand_backoff_step_duration_seconds":60,"expires_at":1654928934016}
+06-10 14:36:45.574 I/DynamiteModule(27413): Considering local module com.google.android.gms.measurement.dynamite:73 and remote module com.google.android.gms.measurement.dynamite:15
+06-10 14:36:45.574 I/DynamiteModule(27413): Selected local version of com.google.android.gms.measurement.dynamite
+06-10 14:36:45.576 D/FirebaseCrashlytics(27413): Crashlytics automatic data collection ENABLED by global Firebase setting.
+06-10 14:36:45.584 D/NetworkSecurityConfig(27413): No Network Security Config specified, using platform default
+06-10 14:36:45.590 D/FirebaseCrashlytics(27413): Successfully configured exception handler.
+06-10 14:36:45.591 D/FirebaseCrashlytics(27413): Opening a new session with ID 62A2E67D023F00016B15230E1522975C
+06-10 14:36:45.591 I/FirebaseInitProvider(27413): FirebaseApp initialization successful
+06-10 14:36:45.594 D/WM-WrkMgrInitializer(27413): Initializing WorkManager with default configuration.
+06-10 14:36:45.596 D/TransportRuntime.JobInfoScheduler(27413): Scheduling upload for context TransportContext(cct, HIGHEST, MSRodHRwczovL2NyYXNobHl0aWNzcmVwb3J0cy1wYS5nb29nbGVhcGlzLmNvbS92MS9maXJlbG9nL2xlZ2FjeS9iYXRjaGxvZ1xBSXphU3lCcnBTWVQ0RkZMMDlyZUhKaTZIOUZZZGVpU25VVE92Mk0=) with jobId=1723543310 in 1000ms(Backend next call timestamp 0). Attempt 1
+06-10 14:36:45.606 E/ResolverController(  175): No valid NAT64 prefix (102, <unspecified>/0)
+06-10 14:36:45.609 D/FirebaseCrashlytics(27413): Registered Firebase Analytics event receiver for breadcrumbs
+06-10 14:36:45.618 V/FA      (27413): App measurement collection enabled
+06-10 14:36:45.618 V/FA      (27413): App measurement enabled for app package, google app id: com.song.gomo, 1:1050786930121:android:f9796e0f6eacf7d7e89c18
+06-10 14:36:45.618 I/FA      (27413): App measurement initialized, version: 64000
+06-10 14:36:45.618 I/FA      (27413): To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+06-10 14:36:45.618 I/FA      (27413): To enable faster debug mode event logging run:
+06-10 14:36:45.618 I/FA      (27413):   adb shell setprop debug.firebase.analytics.app com.song.gomo
+06-10 14:36:45.618 D/FA      (27413): Debug-level message logging enabled
+06-10 14:36:45.637 E/SurfaceFlinger(  205): ro.sf.lcd_density must be defined as a build property
+06-10 14:36:45.637 E/SurfaceFlinger(  205): ro.sf.lcd_density must be defined as a build property
+06-10 14:36:45.639 D/libEGL  (27413): Emulator has host GPU support, qemu.gles is set to 1.
+06-10 14:36:45.639 W/libc    (27413): Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+06-10 14:36:45.637 W/RenderThread(27413): type=1400 audit(0.0:220): avc: denied { write } for name="property_service" dev="tmpfs" ino=7379 scontext=u:r:untrusted_app:s0:c151,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+06-10 14:36:45.641 V/FA      (27413): Connecting to remote service
+06-10 14:36:45.644 D/libEGL  (27413): loaded /vendor/lib64/egl/libEGL_emulation.so
+06-10 14:36:45.645 D/libEGL  (27413): loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+06-10 14:36:45.647 D/libEGL  (27413): loaded /vendor/lib64/egl/libGLESv2_emulation.so
+06-10 14:36:45.654 V/FA      (27413): Connection attempt already in progress
+06-10 14:36:45.659 V/FA      (27413): Connection attempt already in progress
+06-10 14:36:45.669 V/FA      (27413): onActivityCreated
+06-10 14:36:45.741 D/hynl    (27413): onViewCreated: HomeFragment
+06-10 14:36:45.745 W/com.song.gomo(27413): Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+06-10 14:36:45.745 W/com.song.gomo(27413): Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+06-10 14:36:45.746 W/com.song.gomo(27413): Accessing hidden method Landroid/content/ContextWrapper;->getDisplay()Landroid/view/Display; (greylist, linking, allowed)
+06-10 14:36:45.746 D/hynl    (27413): initView destination : Home
+06-10 14:36:45.750 D/hynl    (27413): startNext: com.song.gomo.GomoApplication@f83cddf
+06-10 14:36:45.752 D/hynl    (27413): initView destination : login
+06-10 14:36:45.771 D/hynl    (27413): onViewCreated: LoginFragment
+06-10 14:36:45.774 V/FA      (27413): Activity resumed, time: 392797908
+06-10 14:36:45.776 I/FA      (27413): Tag Manager is not found and thus will not be used
+06-10 14:36:45.784 W/com.song.gomo(27413): Accessing hidden method Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; (greylist, reflection, allowed)
+06-10 14:36:45.784 W/com.song.gomo(27413): Accessing hidden field Landroid/view/View$AttachInfo;->mVisibleInsets:Landroid/graphics/Rect; (greylist, reflection, allowed)
+06-10 14:36:45.784 W/com.song.gomo(27413): Accessing hidden field Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo; (greylist, reflection, allowed)
+06-10 14:36:45.786 V/FA      (27413): Connection attempt already in progress
+06-10 14:36:45.786 V/FA      (27413): Connection attempt already in progress
+06-10 14:36:45.805 D/HostConnection(27413): HostConnection::get() New Host Connection established 0x70b97d6ea0, tid 27464
+06-10 14:36:45.805 D/HostConnection(27413): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+06-10 14:36:45.808 W/OpenGLRenderer(27413): Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+06-10 14:36:45.809 D/EGL_emulation(27413): eglCreateContext: 0x70beb4e000: maj 3 min 0 rcv 3
+06-10 14:36:45.810 D/EGL_emulation(27413): eglMakeCurrent: 0x70beb4e000: ver 3 0 (tinfo 0x70b967f700)
+06-10 14:36:45.814 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:36:45.831 I/hwservicemanager(  123): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+06-10 14:36:45.831 W/Gralloc3(27413): mapper 3.x is not supported
+06-10 14:36:45.832 D/HostConnection(27413): createUnique: call
+06-10 14:36:45.832 D/HostConnection(27413): HostConnection::get() New Host Connection established 0x70beb4e140, tid 27464
+06-10 14:36:45.833 D/HostConnection(27413): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+06-10 14:36:45.833 D/eglCodecCommon(27413): allocate: Ask for block of size 0x1000
+06-10 14:36:45.833 D/eglCodecCommon(27413): allocate: ioctl allocate returned offset 0x1ff694000 size 0x8000
+06-10 14:36:45.833 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:36:45.834 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:36:45.842 D/FA      (27413): Connected to remote service
+06-10 14:36:45.843 V/FA      (27413): Processing queued up service tasks: 5
+06-10 14:36:45.858 V/FA-SVC  ( 1030): Setting user property: first_open_time(_fot), 1654844400000
+06-10 14:36:45.863 V/FA-SVC  ( 1030): Install Referrer Service is: available
+06-10 14:36:45.864 V/FA-SVC  ( 1030): Install Referrer Service connected
+06-10 14:36:45.866 V/FA-SVC  ( 1030): Setting user property: first_open_after_install(_fi), 0
+06-10 14:36:45.871 V/FA-SVC  ( 1030): Logging event: origin=auto,name=first_open(_f),params=Bundle[{ga_conversion(_c)=1, _r=1, engagement_time_msec(_et)=1, previous_first_open_count(_pfo)=0, system_app(_sys)=0, update_with_analytics(_uwa)=1, system_app_update(_sysu)=0}]
+06-10 14:36:45.887 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 500
+06-10 14:36:45.887 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:36:45.888 V/FA-SVC  ( 1030): Scheduling upload, millis: 500
+06-10 14:36:45.894 V/FA-SVC  ( 1030): Background event processing time, ms: 25
+06-10 14:36:45.899 V/FA-SVC  ( 1030): Logging event: origin=auto,name=user_engagement(_e),params=Bundle[{engagement_time_msec(_et)=1, _fr=1}]
+06-10 14:36:45.909 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 9978
+06-10 14:36:45.909 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:36:45.910 V/FA-SVC  ( 1030): Scheduling upload, millis: 9978
+06-10 14:36:45.911 V/FA-SVC  ( 1030): Background event processing time, ms: 13
+06-10 14:36:45.921 V/FA-SVC  ( 1030): Setting user property: ga_session_number(_sno), 1
+06-10 14:36:45.943 V/FA-SVC  ( 1030): Setting user property: ga_session_id(_sid), 1654842527
+06-10 14:36:45.953 V/FA-SVC  ( 1030): Logging event: origin=auto,name=session_start(_s),params=Bundle[{ga_event_origin(_o)=auto, ga_session_id(_sid)=1654842527}]
+06-10 14:36:45.961 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 9926
+06-10 14:36:45.961 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:36:45.964 V/FA-SVC  ( 1030): Scheduling upload, millis: 9926
+06-10 14:36:45.970 V/FA-SVC  ( 1030): Background event processing time, ms: 19
+06-10 14:36:46.008 V/FA-SVC  ( 1030): Logging event: origin=clx,name=app_exception(_ae),params=Bundle[{ga_event_origin(_o)=clx, _r=1, timestamp=1654842527896, fatal=1}]
+06-10 14:36:46.021 I/Icing   ( 1030): Indexing com.google.android.gms-apps from com.google.android.gms
+06-10 14:36:46.029 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 9858
+06-10 14:36:46.029 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:36:46.031 V/FA-SVC  ( 1030): Scheduling upload, millis: 9858
+06-10 14:36:46.033 V/FA-SVC  ( 1030): Background event processing time, ms: 26
+06-10 14:36:46.063 I/Icing   ( 1030): Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+06-10 14:36:46.068 V/FA-SVC  ( 1030): Logging event: origin=clx,name=app_exception(_ae),params=Bundle[{ga_event_origin(_o)=clx, _r=1, timestamp=1654842533711, fatal=1}]
+06-10 14:36:46.072 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 9815
+06-10 14:36:46.072 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:36:46.075 V/FA-SVC  ( 1030): Scheduling upload, millis: 9815
+06-10 14:36:46.075 V/FA-SVC  ( 1030): Background event processing time, ms: 10
+06-10 14:36:46.077 I/Icing   ( 1030): Indexing done com.google.android.gms-apps
+06-10 14:36:46.079 I/Icing   ( 1030): Indexing done com.google.android.gms-internal.3p:MobileApplication
+06-10 14:36:46.080 I/Icing   ( 1030): Indexing com.google.android.gms-apps from com.google.android.gms
+06-10 14:36:46.081 I/Icing   ( 1030): Indexing done com.google.android.gms-apps
+06-10 14:36:46.152 V/FA-SVC  ( 1030): Logging event: origin=clx,name=app_exception(_ae),params=Bundle[{ga_event_origin(_o)=clx, _r=1, timestamp=1654842707187, fatal=1}]
+06-10 14:36:46.160 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 9727
+06-10 14:36:46.160 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:36:46.163 V/FA-SVC  ( 1030): Scheduling upload, millis: 9727
+06-10 14:36:46.164 V/FA-SVC  ( 1030): Background event processing time, ms: 15
+06-10 14:36:46.173 V/FA-SVC  ( 1030): Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-5050253244351552443}]
+06-10 14:36:46.175 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 9712
+06-10 14:36:46.175 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:36:46.176 V/FA-SVC  ( 1030): Scheduling upload, millis: 9712
+06-10 14:36:46.177 V/FA-SVC  ( 1030): Background event processing time, ms: 4
+06-10 14:36:46.184 I/Finsky  (15591): [1661] allg.a(6): Package com.google.android.gms is verified.
+06-10 14:36:46.192 W/FA-SVC  ( 1030): Service response is missing Install Referrer install timestamp
+06-10 14:36:47.775 D/EGL_emulation(27413): eglMakeCurrent: 0x70beb4e000: ver 3 0 (tinfo 0x70b967f700)
+06-10 14:36:47.831 I/ActivityTaskManager(  378): Displayed com.song.gomo/.MainActivity: +2s876ms
+06-10 14:36:47.855 I/PBSessionCacheImpl( 1154): Deleted sessionId[222706728400] from persistence.
+06-10 14:36:47.862 W/SearchServiceCore( 1154): Abort, client detached.
+06-10 14:36:47.866 W/SurfaceFlinger(  205): couldn't log to binary event log: overflow.
+06-10 14:36:49.271 E/ActivityThread(  697): Failed to find provider info for com.google.android.apps.wellbeing.api
+06-10 14:36:51.197 V/FA      (27413): Inactivity, disconnecting from the service
+06-10 14:36:51.207 D/ProfileInstaller(27413): Installing profile for com.song.gomo
+06-10 14:36:52.915 W/ocessService0:( 2967): Reducing the number of considered missed Gc histogram windows from 1623 to 100
+06-10 14:36:52.955 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:36:52.964 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:36:52.973 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:36:52.977 I/GeofencerStateMachine(  857): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=com.google.android.gms]
+06-10 14:36:55.328 E/ClipboardService(  378): Denying clipboard access to com.google.android.googlequicksearchbox, application is not in focus neither is a system service for user 0
+06-10 14:36:55.413 E/memtrack(  378): Couldn't load memtrack module
+06-10 14:36:55.413 W/android.os.Debug(  378): failed to get memory consumption info: -1
+06-10 14:36:55.416 I/netd    (  175): firewallSetUidRule(2, 10138, 1) <0.26ms>
+06-10 14:36:55.420 I/AssistStructure(27413): Flattened final assist data: 3308 bytes, containing 1 windows, 20 views
+06-10 14:36:55.428 W/ktk     (  857): Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+06-10 14:36:55.436 I/KeyboardViewUtil(  730): systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+06-10 14:36:55.437 I/AndroidIME(  730): LatinIme.onActivate() : EditorInfo = Package = com.song.gomo : Type = Text : Learning = Disable : Suggestion = Show : AutoCorrection = Disable : Microphone = Show : NoPersonalizedLearning = Disable
+06-10 14:36:55.454 I/Conv2QueryExtension(  730): Current locale: en_US, config allows these locales: de,en,fr,it,es,pt
+06-10 14:36:55.454 I/Conv2QueryExtension(  730): Conv2Query not enabled due to current app [com.song.gomo] not in whitelist
+06-10 14:36:55.454 I/Conv2QueryExtension(  730): onActivate() : Disabled by unsupported host app
+06-10 14:36:55.464 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9306112
+06-10 14:36:55.466 I/chatty  (  190): uid=1000(system) allocator@2.0-s identical 1 line
+06-10 14:36:55.468 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9306112
+06-10 14:36:55.469 D/EGL_emulation(  730): eglMakeCurrent: 0x70be249e80: ver 3 0 (tinfo 0x70be2b0120)
+06-10 14:36:55.628 E/ResolverController(  175): No valid NAT64 prefix (102, <unspecified>/0)
+06-10 14:36:55.889 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:36:55.891 V/FA-SVC  ( 1030): Starting upload from DelayedRunnable
+06-10 14:36:55.895 D/FA-SVC  ( 1030): Uploading events. Elapsed time since last upload attempt (ms): 10005
+06-10 14:36:55.898 V/FA-SVC  ( 1030): Fetching remote configuration: com.song.gomo
+06-10 14:36:55.898 V/FA-SVC  ( 1030): Not stopping services. fetch, network, upload: true, false, false
+06-10 14:36:55.907 E/ResolverController(  175): No valid NAT64 prefix (102, <unspecified>/0)
+06-10 14:36:56.133 V/FA-SVC  ( 1030): onConfigFetched. Response size: 442
+06-10 14:36:56.134 V/FA-SVC  ( 1030): Parsed config. version, gmp_app_id: 1654829362116548, 1:1050786930121:android:f9796e0f6eacf7d7e89c18
+06-10 14:36:56.136 V/FA-SVC  ( 1030): Successfully fetched config. Got network response. code, size: 200, 442
+06-10 14:36:56.139 V/FA-SVC  ( 1030): Updated engagement user property. scope, value: lifetime, 1
+06-10 14:36:56.139 V/FA-SVC  ( 1030): Checking account type status for ad personalization signals
+06-10 14:36:56.143 V/FA-SVC  ( 1030): Saving bundle, size: 419
+06-10 14:36:56.144 V/FA-SVC  ( 1030): Checking account type status for ad personalization signals
+06-10 14:36:56.147 V/FA-SVC  ( 1030): Saving bundle, size: 551
+06-10 14:36:56.147 D/FA-SVC  ( 1030): Uploading events. Elapsed time since last upload attempt (ms): 10250
+06-10 14:36:56.151 V/FA-SVC  ( 1030): Uploading data. app, uncompressed size, data: com.song.gomo, 1263, 
+06-10 14:36:56.151 V/FA-SVC  ( 1030): batch {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):   bundle {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     protocol_version: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     platform: android
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     gmp_version: 64000
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     uploading_gmp_version: 202414
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     dynamite_version: 73
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     config_version: 1654829362116548
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     gmp_app_id: 1:1050786930121:android:f9796e0f6eacf7d7e89c18
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     admob_app_id: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     app_id: com.song.gomo
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     app_version: 1.0
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     app_version_major: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     firebase_instance_id: cjgtNmWmSnClODS6dyJ1jl
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     dev_cert_hash: -5115794269860810455
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     app_store: manual_install
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     upload_timestamp_millis: 1654843016137
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     start_timestamp_millis: 1654842527579
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     end_timestamp_millis: 1654842527579
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     app_instance_id: 2f1cb4fd340df9f2f00d479079f660bf
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     resettable_device_id: 8bd212ab-1772-49fb-b4fb-9510b19a0d69
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     device_id: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     ds_id: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     limited_ad_tracking: false
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     os_version: 10
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     device_model: Android SDK built for arm64
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     user_default_language: en-us
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     time_zone_offset_minutes: 480
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     bundle_sequential_index: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     service_upload: true
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     health_monitor: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     user_property {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654842527579
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       name: first_open_time(_fot)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       int_value: 1654844400000
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     user_property {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654842527579
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       name: first_open_after_install(_fi)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       int_value: 0
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     user_property {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654843016138
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       name: lifetime_user_engagement(_lte)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       int_value: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     event {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       name: first_open(_f)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       timestamp_millis: 1654842527579
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       previous_timestamp_millis: 0
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: ga_conversion(_c)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         int_value: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: ga_event_origin(_o)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         string_value: auto
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: _r
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         int_value: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: engagement_time_msec(_et)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         int_value: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: previous_first_open_count(_pfo)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         int_value: 0
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: system_app(_sys)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         int_value: 0
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: update_with_analytics(_uwa)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         int_value: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: system_app_update(_sysu)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         int_value: 0
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     event {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       name: user_engagement(_e)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       timestamp_millis: 1654842527579
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       previous_timestamp_millis: 0
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: ga_event_origin(_o)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         string_value: auto
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: engagement_time_msec(_et)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         int_value: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       param {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         name: _fr
+06-10 14:36:56.151 V/FA-SVC  ( 1030):         int_value: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):   }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):   bundle {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     protocol_version: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     platform: android
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     gmp_version: 64000
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     uploading_gmp_version: 202414
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     dynamite_version: 73
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     config_version: 1654829362116548
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     gmp_app_id: 1:1050786930121:android:f9796e0f6eacf7d7e89c18
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     admob_app_id: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     app_id: com.song.gomo
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     app_version: 1.0
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     app_version_major: 1
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     firebase_instance_id: cjgtNmWmSnClODS6dyJ1jl
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     dev_cert_hash: -5115794269860810455
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     app_store: manual_install
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     upload_timestamp_millis: 1654843016137
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     start_timestamp_millis: 1654842527738
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     end_timestamp_millis: 1654843005775
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     previous_bundle_start_timestamp_millis: 1654842527579
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     previous_bundle_end_timestamp_millis: 1654842527579
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     app_instance_id: 2f1cb4fd340df9f2f00d479079f660bf
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     resettable_device_id: 8bd212ab-1772-49fb-b4fb-9510b19a0d69
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     device_id: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     ds_id: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     limited_ad_tracking: false
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     os_version: 10
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     device_model: Android SDK built for arm64
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     user_default_language: en-us
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     time_zone_offset_minutes: 480
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     bundle_sequential_index: 2
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     service_upload: true
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     health_monitor: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     user_property {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654842527579
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       name: first_open_time(_fot)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       int_value: 1654844400000
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     user_property {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654842527579
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       name: first_open_after_install(_fi)
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       int_value: 0
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     }
+06-10 14:36:56.151 V/FA-SVC  ( 1030):     user_property {
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654842527738
+06-10 14:36:56.151 V/FA-SVC  ( 1030):       name: ga_session_numb
+06-10 14:36:56.151 V/FA-SVC  ( 1030): Not stopping services. fetch, network, upload: true, true, false
+06-10 14:36:56.153 V/FA-SVC  ( 1030): Uploading data. size: 647
+06-10 14:36:56.156 V/FA-SVC  ( 1030): Not stopping services. fetch, network, upload: false, true, false
+06-10 14:36:56.286 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 3599994
+06-10 14:36:56.286 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:36:56.290 V/FA-SVC  ( 1030): Scheduling upload, millis: 3599994
+06-10 14:36:56.291 V/FA-SVC  ( 1030): Successful upload. Got network response. code, size: 204, 0
+06-10 14:36:56.297 V/FA-SVC  ( 1030): Nothing to upload or uploading impossible
+06-10 14:36:56.297 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:36:56.298 V/FA-SVC  ( 1030): Stopping uploading service(s)
+06-10 14:36:57.713 D/AndroidRuntime(27413): Shutting down VM
+06-10 14:36:57.714 W/audio_hw_generic(  181): Not supplying enough data to HAL, expected position 50889739 , only wrote 50889729
+--------- beginning of crash
+06-10 14:36:57.714 E/AndroidRuntime(27413): FATAL EXCEPTION: main
+06-10 14:36:57.714 E/AndroidRuntime(27413): Process: com.song.gomo, PID: 27413
+06-10 14:36:57.714 E/AndroidRuntime(27413): java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:502)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+06-10 14:36:57.714 E/AndroidRuntime(27413): Caused by: java.lang.reflect.InvocationTargetException
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at java.lang.reflect.Method.invoke(Native Method)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	... 1 more
+06-10 14:36:57.714 E/AndroidRuntime(27413): Caused by: java.lang.Exception: This is a exception
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at com.song.gomo.ui.login.LoginFragment.initView$lambda-0(LoginFragment.kt:44)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at com.song.gomo.ui.login.LoginFragment.$r8$lambda$a67TwatFlxSHGUSa-DRQsAwB7Dc(Unknown Source:0)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at com.song.gomo.ui.login.LoginFragment$$ExternalSyntheticLambda1.onClick(Unknown Source:2)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at android.view.View.performClick(View.java:7125)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at android.view.View.performClickInternal(View.java:7102)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at android.view.View.access$3500(View.java:801)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at android.view.View$PerformClick.run(View.java:27336)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at android.os.Handler.handleCallback(Handler.java:883)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at android.os.Handler.dispatchMessage(Handler.java:100)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at android.os.Looper.loop(Looper.java:214)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	at android.app.ActivityThread.main(ActivityThread.java:7356)
+06-10 14:36:57.714 E/AndroidRuntime(27413): 	... 3 more
+06-10 14:36:57.714 D/FirebaseCrashlytics(27413): Handling uncaught exception "java.lang.RuntimeException: java.lang.reflect.InvocationTargetException" from thread main
+06-10 14:36:57.769 D/FirebaseCrashlytics(27413): No userId set for session 62A2E67D023F00016B15230E1522975C
+06-10 14:36:57.774 D/FirebaseCrashlytics(27413): Opening a new session with ID 62A2E689030500026B15230E1522975C
+06-10 14:36:57.775 D/FirebaseCrashlytics(27413): Crashlytics automatic data collection ENABLED by global Firebase setting.
+06-10 14:36:57.776 D/FirebaseCrashlytics(27413): Logging app exception event to Firebase Analytics
+06-10 14:36:57.779 D/FirebaseCrashlytics(27413): Sending report through Google DataTransport: 62A2E67D023F00016B15230E1522975C
+06-10 14:36:57.789 D/TransportRuntime.SQLiteEventStore(27413): Storing event with priority=HIGHEST, name=FIREBASE_CRASHLYTICS_REPORT for destination cct
+06-10 14:36:57.790 V/FA      (27413): Connecting to remote service
+06-10 14:36:57.791 D/TransportRuntime.JobInfoScheduler(27413): Upload for context TransportContext(cct, HIGHEST, MSRodHRwczovL2NyYXNobHl0aWNzcmVwb3J0cy1wYS5nb29nbGVhcGlzLmNvbS92MS9maXJlbG9nL2xlZ2FjeS9iYXRjaGxvZ1xBSXphU3lCcnBTWVQ0RkZMMDlyZUhKaTZIOUZZZGVpU25VVE92Mk0=) is already scheduled. Returning...
+06-10 14:36:57.795 V/FA      (27413): Recording user engagement, ms: 12020
+06-10 14:36:57.795 D/FirebaseCrashlytics(27413): Crashlytics report successfully enqueued to DataTransport: 62A2E67D023F00016B15230E1522975C
+06-10 14:36:57.795 D/FirebaseCrashlytics(27413): Deleted report file: /data/user/0/com.song.gomo/files/.com.google.firebase.crashlytics.files.v1/priority-reports/62A2E67D023F00016B15230E1522975C
+06-10 14:36:57.796 D/FirebaseCrashlytics(27413): Completed exception processing. Invoking default exception handler.
+06-10 14:36:57.797 I/DropBoxManagerService(  378): add tag=data_app_crash isTagEnabled=true flags=0x2
+06-10 14:36:57.797 W/ActivityTaskManager(  378):   Force finishing activity com.song.gomo/.MainActivity
+06-10 14:36:57.798 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:57.800 W/BroadcastQueue(  378): Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+06-10 14:36:57.800 W/BroadcastQueue(  378): Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+06-10 14:36:57.798 I/chatty  (  378): uid=1000(system) Binder:378_1E identical 8 lines
+06-10 14:36:57.798 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:57.801 I/Process (27413): Sending signal. PID: 27413 SIG: 9
+06-10 14:36:57.834 W/InputDispatcher(  378): channel '10f9dc6 com.song.gomo/com.song.gomo.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+06-10 14:36:57.834 E/InputDispatcher(  378): channel '10f9dc6 com.song.gomo/com.song.gomo.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+06-10 14:36:57.836 I/ActivityManager(  378): Process com.song.gomo (pid 27413) has died: vis+99 TOP 
+06-10 14:36:57.836 I/Zygote  (  176): Process 27413 exited due to signal 9 (Killed)
+06-10 14:36:57.836 I/libprocessgroup(  378): Successfully killed process cgroup uid 10151 pid 27413 in 0ms
+06-10 14:36:57.836 I/WindowManager(  378): WIN DEATH: Window{10f9dc6 u0 com.song.gomo/com.song.gomo.MainActivity}
+06-10 14:36:57.836 W/InputDispatcher(  378): Attempted to unregister already unregistered input channel '10f9dc6 com.song.gomo/com.song.gomo.MainActivity (server)'
+06-10 14:36:57.839 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:57.841 W/ActivityManager(  378): setHasOverlayUi called on unknown pid: 27413
+06-10 14:36:57.866 W/ActivityManager(  378): Unable to start service Intent { act=android.service.appprediction.AppPredictionService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService } U=0: not found
+06-10 14:36:57.866 W/RemoteAppPredictionService(  378): could not bind to Intent { act=android.service.appprediction.AppPredictionService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService } using flags 67108865
+06-10 14:36:57.839 I/chatty  (  378): uid=1000(system) Binder:378_11 identical 18 lines
+06-10 14:36:57.839 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:57.870 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:36:57.877 I/chatty  (  190): uid=1000(system) allocator@2.0-s identical 3 lines
+06-10 14:36:57.880 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:36:57.880 D/EGL_emulation(  697): eglMakeCurrent: 0x70627a9f20: ver 3 0 (tinfo 0x70b96c19a0)
+06-10 14:36:57.880 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:36:57.891 D/EGL_emulation( 1154): eglMakeCurrent: 0x70b97d8340: ver 3 0 (tinfo 0x70b9a9f880)
+06-10 14:36:57.906 I/netd    (  175): firewallSetUidRule(2, 10138, 2) <0.04ms>
+06-10 14:36:57.911 I/PhenotypeExpConfig(  730): refreshConfiguration() : Force = false : UpdateAvailable = false : Age = 298 minutes : MaxAge = 720 minutes
+06-10 14:36:57.912 I/AndroidIME(  730): LatinIme.onDeactivate()
+06-10 14:36:57.919 I/WorkerManager( 1154): dispose()
+06-10 14:36:57.919 W/ThreadPoolDumper( 1154): Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+06-10 14:36:57.920 D/EGL_emulation(  730): eglMakeCurrent: 0x70be249e80: ver 3 0 (tinfo 0x70be2b0120)
+06-10 14:36:57.937 W/SessionLifecycleManager( 1154): Handover failed. Creating new session controller.
+06-10 14:36:57.938 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:36:57.947 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:36:57.969 I/MicroDetectionWorker( 1154): #startMicroDetector [speakerMode: 0]
+06-10 14:36:57.970 W/ErrorReporter( 1154): reportError [type: 211, code: 393244, bug: 0]: errorCode: 393244, engine: 0
+06-10 14:36:57.971 I/MicroDetector( 1154): Keeping mic open: false
+06-10 14:36:57.971 I/MicroDetectionWorker( 1154): #onError(false)
+06-10 14:36:57.976 W/LocationOracle( 1154): No location history returned by ContextManager
+06-10 14:36:57.988 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:36:57.992 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:36:57.995 W/GCoreFlp(  857): No location to return for getLastLocation()
+06-10 14:36:58.004 W/ctxmgr  (  857): [AclManager] No 3 for (accnt=account#-517948760#, com.google.android.gms(10108):UserVelocityProducer, vrsn=202414019, 0, 3pPkg = null ,  3pMdlId = null ,  pid = 857). Was: 3 for 1, account#-517948760# [CONTEXT service_id=47 ]
+06-10 14:36:58.006 W/GCoreFlp(  857): No location to return for getLastLocation()
+06-10 14:36:58.013 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:36:58.020 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:36:58.070 I/chatty  (  525): uid=10122(com.android.systemui) RenderThread identical 4 lines
+06-10 14:36:58.076 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:36:58.091 I/GeofencerStateMachine(  857): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=com.google.android.gms]
+06-10 14:36:58.093 I/GeofencerStateMachine(  857): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=com.google.android.gms]
+06-10 14:36:58.094 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:36:58.095 I/ctxmgr  (  857): [ProducerStatusImpl] updateStateForNewContextData: inactive, contextName=7 [CONTEXT service_id=47 ]
+06-10 14:36:58.100 W/GCoreFlp(  857): No location to return for getLastLocation()
+06-10 14:36:58.104 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:36:58.108 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:36:58.112 I/PlacesLogger(  857): [PlaceInferenceEngine]: [anon] Changed inference mode: 0 [CONTEXT service_id=253 ]
+06-10 14:36:58.114 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:36:58.114 I/.gms.persisten(  857): Background concurrent copying GC freed 146526(6796KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 11MB/17MB, paused 14us total 108.220ms
+06-10 14:36:58.124 W/GCoreFlp(  857): No location to return for getLastLocation()
+06-10 14:36:58.133 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:36:58.133 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:36:58.137 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:36:58.141 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:36:58.148 I/LogUtils(  857): [Places]: ?: PlacesBleScanner start() with priority 2 [CONTEXT service_id=253 ]
+06-10 14:36:58.152 E/BeaconBle(  857): Missing BluetoothAdapter [CONTEXT service_id=111 ]
+06-10 14:36:58.152 I/BeaconBle(  857): BLE 'KK+' software access layer enabled [CONTEXT service_id=111 ]
+06-10 14:36:58.154 I/PlacesLogger(  857): [PlaceInferenceEngine]: [anon] Changed inference mode: 1 [CONTEXT service_id=253 ]
+06-10 14:36:58.155 W/GCoreFlp(  857): No location to return for getLastLocation()
+06-10 14:36:58.160 E/ResolverController(  175): No valid NAT64 prefix (102, <unspecified>/0)
+06-10 14:36:58.166 I/BeaconBle(  857): Client requested scan, settings=BleSettings [scanMode=ZERO_POWER, callbackType=ALL_MATCHES, reportDelayMillis=0, 1 filters, 0 clients, callingClientName=Places] [CONTEXT service_id=111 ]
+06-10 14:36:58.177 I/BeaconBle(  857): Scan : No clients left, canceling alarm. [CONTEXT service_id=111 ]
+06-10 14:36:58.178 E/BeaconBle(  857): Scan couldn't start for Places [CONTEXT service_id=111 ]
+06-10 14:36:58.184 W/Places  (  857): BLE failure while scanning - code 5
+06-10 14:36:58.298 W/ActivityTaskManager(  378): Activity top resumed state loss timeout for ActivityRecord{1fb9763 u0 com.song.gomo/.MainActivity t-1 f}
+06-10 14:36:58.811 D/WificondControl(  378): Scan result ready event
+06-10 14:36:58.824 E/memtrack(  857): Couldn't load memtrack module
+06-10 14:36:58.824 W/android.os.Debug(  857): failed to get memory consumption info: -1
+06-10 14:36:59.458 E/ResolverController(  175): No valid NAT64 prefix (102, <unspecified>/0)
+06-10 14:36:59.461 I/NetworkManagementSocketTagger(  857): tagSocketFd(-1, 536871943, -1) failed with errno-9
+06-10 14:36:59.719 W/NotificationService(  378): Object died trying to hide notification android.app.ITransientNotification$Stub$Proxy@1607e4d in package com.song.gomo
+06-10 14:36:59.893 I/ActivityTaskManager(  378): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.song.gomo/.MainActivity bnds=[841,568][1043,872]} from uid 10103
+06-10 14:36:59.908 W/ActivityManager(  378): Unable to start service Intent { act=android.service.appprediction.AppPredictionService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService } U=0: not found
+06-10 14:36:59.908 W/RemoteAppPredictionService(  378): could not bind to Intent { act=android.service.appprediction.AppPredictionService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService } using flags 67108865
+06-10 14:36:59.910 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:59.910 I/chatty  (  378): uid=1000(system) Binder:378_1C identical 8 lines
+06-10 14:36:59.910 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:59.922 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:36:59.925 D/Zygote  (  176): Forked child process 27519
+06-10 14:36:59.930 I/ActivityManager(  378): Start proc 27519:com.song.gomo/u0a151 for activity {com.song.gomo/com.song.gomo.MainActivity}
+06-10 14:36:59.931 I/com.song.gomo(27519): Late-enabling -Xcheck:jni
+06-10 14:36:59.947 E/com.song.gomo(27519): Unknown bits set in runtime_flags: 0x8000
+06-10 14:36:59.966 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:59.972 I/chatty  (  378): uid=1000(system) Binder:378_6 identical 28 lines
+06-10 14:36:59.972 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:59.977 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:59.977 I/chatty  (  378): uid=1000(system) android.anim identical 8 lines
+06-10 14:36:59.977 W/InputReader(  378): Device has associated, but no associated display id.
+06-10 14:36:59.990 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:37:00.040 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.046 E/GCM     (  857): Missing checkin config file
+06-10 14:37:00.046 W/GCM     (  857): GCM FAILED TO INITIALIZE - missing checkin
+06-10 14:37:00.058 E/GCM     (  857): Missing checkin config file
+06-10 14:37:00.058 W/GCM     (  857): GCM FAILED TO INITIALIZE - missing checkin
+06-10 14:37:00.065 E/WakeLock(  857): GCM_HB_ALARM release without a matched acquire!
+06-10 14:37:00.065 W/WakeLock(  857): GCM_HB_ALARM counter does not exist
+06-10 14:37:00.067 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.074 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ade0
+06-10 14:37:00.084 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.086 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ae40
+06-10 14:37:00.100 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.105 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0a840
+06-10 14:37:00.117 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.118 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ade0
+06-10 14:37:00.134 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.135 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ae40
+06-10 14:37:00.151 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.152 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0a840
+06-10 14:37:00.167 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.168 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ade0
+06-10 14:37:00.184 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.185 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ae40
+06-10 14:37:00.201 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.202 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0a840
+06-10 14:37:00.217 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.218 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ade0
+06-10 14:37:00.222 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.234 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.235 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.236 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ae40
+06-10 14:37:00.239 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.251 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.251 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.252 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0a840
+06-10 14:37:00.256 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.267 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.268 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ade0
+06-10 14:37:00.270 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.273 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.279 I/FirebaseApp(27519): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+06-10 14:37:00.281 I/FirebaseCrashlytics(27519): Initializing Firebase Crashlytics 18.2.10 for com.song.gomo
+06-10 14:37:00.284 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.284 D/FirebaseCrashlytics(27519): Crashlytics automatic data collection ENABLED by global Firebase setting.
+06-10 14:37:00.285 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ae40
+06-10 14:37:00.285 D/FirebaseCrashlytics(27519): AnalyticsConnector now available.
+06-10 14:37:00.287 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.289 D/FirebaseCrashlytics(27519): Registered Firebase Analytics listener.
+06-10 14:37:00.290 D/FirebaseCrashlytics(27519): Mapping file ID is: 00000000000000000000000000000000
+06-10 14:37:00.293 D/FirebaseCrashlytics(27519): Checking for cached settings...
+06-10 14:37:00.293 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.294 D/FirebaseCrashlytics(27519): Loaded cached settings: {"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"62a2e4a05d55663bb0f34454","bundle_id":"com.song.gomo"},"on_demand_upload_rate_per_minute":10,"on_demand_backoff_base":1.2,"on_demand_backoff_step_duration_seconds":60,"expires_at":1654928934016}
+06-10 14:37:00.295 D/FirebaseCrashlytics(27519): Crashlytics automatic data collection ENABLED by global Firebase setting.
+06-10 14:37:00.299 I/DynamiteModule(27519): Considering local module com.google.android.gms.measurement.dynamite:73 and remote module com.google.android.gms.measurement.dynamite:15
+06-10 14:37:00.299 I/DynamiteModule(27519): Selected local version of com.google.android.gms.measurement.dynamite
+06-10 14:37:00.301 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.302 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0a840
+06-10 14:37:00.302 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.305 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.309 D/NetworkSecurityConfig(27519): No Network Security Config specified, using platform default
+06-10 14:37:00.315 E/ResolverController(  175): No valid NAT64 prefix (102, <unspecified>/0)
+06-10 14:37:00.316 D/FirebaseCrashlytics(27519): Successfully configured exception handler.
+06-10 14:37:00.316 D/FirebaseCrashlytics(27519): Opening a new session with ID 62A2E68C012700016B7F230E1522975C
+06-10 14:37:00.316 I/FirebaseInitProvider(27519): FirebaseApp initialization successful
+06-10 14:37:00.318 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.319 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ade0
+06-10 14:37:00.320 D/WM-WrkMgrInitializer(27519): Initializing WorkManager with default configuration.
+06-10 14:37:00.320 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.323 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.324 D/TransportRuntime.JobInfoScheduler(27519): Upload for context TransportContext(cct, HIGHEST, MSRodHRwczovL2NyYXNobHl0aWNzcmVwb3J0cy1wYS5nb29nbGVhcGlzLmNvbS92MS9maXJlbG9nL2xlZ2FjeS9iYXRjaGxvZ1xBSXphU3lCcnBTWVQ0RkZMMDlyZUhKaTZIOUZZZGVpU25VVE92Mk0=) is already scheduled. Returning...
+06-10 14:37:00.328 D/FirebaseCrashlytics(27519): Registered Firebase Analytics event receiver for breadcrumbs
+06-10 14:37:00.334 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.335 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ae40
+06-10 14:37:00.336 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.339 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.344 V/FA      (27519): App measurement collection enabled
+06-10 14:37:00.344 V/FA      (27519): App measurement enabled for app package, google app id: com.song.gomo, 1:1050786930121:android:f9796e0f6eacf7d7e89c18
+06-10 14:37:00.345 I/FA      (27519): App measurement initialized, version: 64000
+06-10 14:37:00.345 I/FA      (27519): To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+06-10 14:37:00.345 I/FA      (27519): To enable faster debug mode event logging run:
+06-10 14:37:00.345 I/FA      (27519):   adb shell setprop debug.firebase.analytics.app com.song.gomo
+06-10 14:37:00.345 D/FA      (27519): Debug-level message logging enabled
+06-10 14:37:00.349 E/SurfaceFlinger(  205): ro.sf.lcd_density must be defined as a build property
+06-10 14:37:00.350 E/SurfaceFlinger(  205): ro.sf.lcd_density must be defined as a build property
+06-10 14:37:00.351 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.352 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0a840
+06-10 14:37:00.354 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.356 D/EGL_emulation(  525): eglMakeCurrent: 0x70be29a760: ver 3 0 (tinfo 0x70be30e1e0)
+06-10 14:37:00.357 W/RenderThread(27519): type=1400 audit(0.0:221): avc: denied { write } for name="property_service" dev="tmpfs" ino=7379 scontext=u:r:untrusted_app:s0:c151,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+06-10 14:37:00.358 D/libEGL  (27519): Emulator has host GPU support, qemu.gles is set to 1.
+06-10 14:37:00.358 W/libc    (27519): Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+06-10 14:37:00.367 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.368 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ade0
+06-10 14:37:00.376 D/libEGL  (27519): loaded /vendor/lib64/egl/libEGL_emulation.so
+06-10 14:37:00.376 D/libEGL  (27519): loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+06-10 14:37:00.376 D/libEGL  (27519): loaded /vendor/lib64/egl/libGLESv2_emulation.so
+06-10 14:37:00.384 W/EmuHWC2 (  191): validate: layer 807 CompositionType 1, fallback
+06-10 14:37:00.386 W/EmuHWC2 (  191): No layers, exit, buffer 0x7d5da0ae40
+06-10 14:37:00.388 V/FA      (27519): onActivityCreated
+06-10 14:37:00.390 V/FA      (27519): Connecting to remote service
+06-10 14:37:00.396 V/FA      (27519): Connection attempt already in progress
+06-10 14:37:00.398 V/FA      (27519): Connection attempt already in progress
+06-10 14:37:00.434 D/EGL_emulation( 1154): eglMakeCurrent: 0x70b97d8340: ver 3 0 (tinfo 0x70b9a9f880)
+06-10 14:37:00.451 E/Layer   (  205): [Surface(name=AppWindowToken{d146109 token=Token{8163210 ActivityRecord{abe16d3 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t58}}})/@0xc17b76f - animation-leash#0] No local sync point found
+06-10 14:37:00.451 E/Layer   (  205): [Surface(name=AppWindowToken{d146109 token=Token{8163210 ActivityRecord{abe16d3 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t58}}})/@0xc17b76f - animation-leash#0] No local sync point found
+06-10 14:37:00.451 E/Layer   (  205): [Surface(name=AppWindowToken{8970050 token=Token{7243613 ActivityRecord{91f6d02 u0 com.song.gomo/.MainActivity t254}}})/@0xe92d414 - animation-leash#0] No local sync point found
+06-10 14:37:00.451 E/Layer   (  205): [Surface(name=AppWindowToken{8970050 token=Token{7243613 ActivityRecord{91f6d02 u0 com.song.gomo/.MainActivity t254}}})/@0xe92d414 - animation-leash#0] No local sync point found
+06-10 14:37:00.454 D/hynl    (27519): onViewCreated: HomeFragment
+06-10 14:37:00.458 W/com.song.gomo(27519): Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+06-10 14:37:00.458 W/com.song.gomo(27519): Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+06-10 14:37:00.459 W/com.song.gomo(27519): Accessing hidden method Landroid/content/ContextWrapper;->getDisplay()Landroid/view/Display; (greylist, linking, allowed)
+06-10 14:37:00.459 D/hynl    (27519): initView destination : Home
+06-10 14:37:00.463 D/hynl    (27519): startNext: com.song.gomo.GomoApplication@8f05ea
+06-10 14:37:00.464 D/hynl    (27519): initView destination : login
+06-10 14:37:00.480 D/hynl    (27519): onViewCreated: LoginFragment
+06-10 14:37:00.483 V/FA      (27519): Activity resumed, time: 392812616
+06-10 14:37:00.484 E/Layer   (  205): [Surface(name=AppWindowToken{d146109 token=Token{8163210 ActivityRecord{abe16d3 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t58}}})/@0xc17b76f - animation-leash#0] No local sync point found
+06-10 14:37:00.484 E/Layer   (  205): [Surface(name=AppWindowToken{8970050 token=Token{7243613 ActivityRecord{91f6d02 u0 com.song.gomo/.MainActivity t254}}})/@0xe92d414 - animation-leash#0] No local sync point found
+06-10 14:37:00.485 I/FA      (27519): Tag Manager is not found and thus will not be used
+06-10 14:37:00.487 D/EGL_emulation(  697): eglMakeCurrent: 0x70627a9f20: ver 3 0 (tinfo 0x70b96c19a0)
+06-10 14:37:00.495 V/FA      (27519): Connection attempt already in progress
+06-10 14:37:00.495 W/com.song.gomo(27519): Accessing hidden method Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; (greylist, reflection, allowed)
+06-10 14:37:00.495 W/com.song.gomo(27519): Accessing hidden field Landroid/view/View$AttachInfo;->mVisibleInsets:Landroid/graphics/Rect; (greylist, reflection, allowed)
+06-10 14:37:00.495 W/com.song.gomo(27519): Accessing hidden field Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo; (greylist, reflection, allowed)
+06-10 14:37:00.496 V/FA      (27519): Connection attempt already in progress
+06-10 14:37:00.512 D/HostConnection(27519): HostConnection::get() New Host Connection established 0x70b97d7120, tid 27573
+06-10 14:37:00.512 D/HostConnection(27519): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+06-10 14:37:00.515 W/OpenGLRenderer(27519): Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+06-10 14:37:00.515 D/EGL_emulation(27519): eglCreateContext: 0x7064860500: maj 3 min 0 rcv 3
+06-10 14:37:00.516 D/EGL_emulation(27519): eglMakeCurrent: 0x7064860500: ver 3 0 (tinfo 0x70b96ac380)
+06-10 14:37:00.524 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:37:00.525 I/hwservicemanager(  123): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+06-10 14:37:00.525 W/Gralloc3(27519): mapper 3.x is not supported
+06-10 14:37:00.526 D/HostConnection(27519): createUnique: call
+06-10 14:37:00.526 D/HostConnection(27519): HostConnection::get() New Host Connection established 0x7064860640, tid 27573
+06-10 14:37:00.527 D/HostConnection(27519): HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+06-10 14:37:00.527 D/eglCodecCommon(27519): allocate: Ask for block of size 0x1000
+06-10 14:37:00.527 D/eglCodecCommon(27519): allocate: ioctl allocate returned offset 0x1ff694000 size 0x8000
+06-10 14:37:00.528 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:37:00.528 D/gralloc_ranchu(  190): gralloc_alloc: Creating ashmem region of size 9592832
+06-10 14:37:00.534 D/FA      (27519): Connected to remote service
+06-10 14:37:00.534 V/FA      (27519): Processing queued up service tasks: 5
+06-10 14:37:00.544 V/FA-SVC  ( 1030): Logging event: origin=clx,name=app_exception(_ae),params=Bundle[{ga_event_origin(_o)=clx, _r=1, engagement_time_msec(_et)=12007, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-5050253244351552443, timestamp=1654843017714, fatal=1}]
+06-10 14:37:00.547 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 5733
+06-10 14:37:00.547 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:37:00.548 V/FA-SVC  ( 1030): Scheduling upload, millis: 5733
+06-10 14:37:00.549 V/FA-SVC  ( 1030): Background event processing time, ms: 5
+06-10 14:37:00.555 V/FA-SVC  ( 1030): Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=7382362923333607048}]
+06-10 14:37:00.559 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 5721
+06-10 14:37:00.559 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:37:00.560 V/FA-SVC  ( 1030): Scheduling upload, millis: 5721
+06-10 14:37:00.561 V/FA-SVC  ( 1030): Background event processing time, ms: 6
+06-10 14:37:00.577 I/gle.android.gm( 1030): Compiler allocated 6087KB to compile void agyg.c(com.google.android.gms.measurement.internal.EventParcel, com.google.android.gms.measurement.internal.AppMetadata)
+06-10 14:37:02.476 D/EGL_emulation(27519): eglMakeCurrent: 0x7064860500: ver 3 0 (tinfo 0x70b96ac380)
+06-10 14:37:02.508 I/ActivityTaskManager(  378): Displayed com.song.gomo/.MainActivity: +2s613ms
+06-10 14:37:02.521 I/PBSessionCacheImpl( 1154): Deleted sessionId[222706860388] from persistence.
+06-10 14:37:02.527 W/SearchServiceCore( 1154): Abort, client detached.
+06-10 14:37:02.554 W/SurfaceFlinger(  205): couldn't log to binary event log: overflow.
+06-10 14:37:02.979 W/putmethod.lati(  730): Reducing the number of considered missed Gc histogram windows from 1738 to 100
+06-10 14:37:03.050 W/audio_hw_generic(  181): Not supplying enough data to HAL, expected position 51358543 , only wrote 51125045
+06-10 14:37:03.083 W/CCTFlatFileLogStore(  857): Excessive logging: 1024 events, 116736 bytes from log source ANDROID_GSA last 891s
+06-10 14:37:03.834 E/WakeLock(  857): NlpWakeLock ** IS FORCE-RELEASED ON TIMEOUT **
+06-10 14:37:04.276 E/ActivityThread(  697): Failed to find provider info for com.google.android.apps.wellbeing.api
+06-10 14:37:05.588 V/FA      (27519): Inactivity, disconnecting from the service
+06-10 14:37:06.286 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:37:06.292 V/FA-SVC  ( 1030): Starting upload from DelayedRunnable
+06-10 14:37:06.298 V/FA-SVC  ( 1030): Checking account type status for ad personalization signals
+06-10 14:37:06.305 V/FA-SVC  ( 1030): Saving bundle, size: 530
+06-10 14:37:06.310 D/FA-SVC  ( 1030): Uploading events. Elapsed time since last upload attempt (ms): 10014
+06-10 14:37:06.312 V/FA-SVC  ( 1030): Uploading data. app, uncompressed size, data: com.song.gomo, 625, 
+06-10 14:37:06.312 V/FA-SVC  ( 1030): batch {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):   bundle {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     protocol_version: 1
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     platform: android
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     gmp_version: 64000
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     uploading_gmp_version: 202414
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     dynamite_version: 73
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     config_version: 1654829362116548
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     gmp_app_id: 1:1050786930121:android:f9796e0f6eacf7d7e89c18
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     admob_app_id: 
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     app_id: com.song.gomo
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     app_version: 1.0
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     app_version_major: 1
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     firebase_instance_id: cjgtNmWmSnClODS6dyJ1jl
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     dev_cert_hash: -5115794269860810455
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     app_store: manual_install
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     upload_timestamp_millis: 1654843026294
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     start_timestamp_millis: 1654843017776
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     end_timestamp_millis: 1654843020485
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     previous_bundle_start_timestamp_millis: 1654842527738
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     previous_bundle_end_timestamp_millis: 1654843005775
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     app_instance_id: 2f1cb4fd340df9f2f00d479079f660bf
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     resettable_device_id: 8bd212ab-1772-49fb-b4fb-9510b19a0d69
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     device_id: 
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     ds_id: 
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     limited_ad_tracking: false
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     os_version: 10
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     device_model: Android SDK built for arm64
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     user_default_language: en-us
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     time_zone_offset_minutes: 480
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     bundle_sequential_index: 3
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     service_upload: true
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     health_monitor: 
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     user_property {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654842527579
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       name: first_open_time(_fot)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       int_value: 1654844400000
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     user_property {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654842527579
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       name: first_open_after_install(_fi)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       int_value: 0
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     user_property {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654842527738
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       name: ga_session_number(_sno)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       int_value: 1
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     user_property {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654842527738
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       name: ga_session_id(_sid)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       int_value: 1654842527
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     user_property {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654843026298
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       name: lifetime_user_engagement(_lte)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       int_value: 1
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     user_property {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       set_timestamp_millis: 1654843026298
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       name: session_user_engagement(_se)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       string_value: 
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       int_value: 0
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     event {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       name: app_exception(_ae)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       timestamp_millis: 1654843017776
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       previous_timestamp_millis: 1654842707222
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       param {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         name: ga_event_origin(_o)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         string_value: clx
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       param {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         name: _r
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         int_value: 1
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       param {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         name: engagement_time_msec(_et)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         int_value: 12007
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       param {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         name: ga_screen_class(_sc)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         string_value: MainActivity
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       param {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         name: ga_screen_id(_si)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         int_value: -5050253244351552443
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       param {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         name: timestamp
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         int_value: 1654843017714
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       param {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         name: fatal
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         int_value: 1
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     event {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       name: screen_view(_vs)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       timestamp_millis: 1654843020485
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       previous_timestamp_millis: 1654843005775
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       param {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         name: ga_event_origin(_o)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         string_value: auto
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       param {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         name: ga_screen_class(_sc)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         string_value: MainActivity
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       param {
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         name: ga_screen_id(_si)
+06-10 14:37:06.312 V/FA-SVC  ( 1030):         int_value: 7382362923333607048
+06-10 14:37:06.312 V/FA-SVC  ( 1030):       }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):     }
+06-10 14:37:06.312 V/FA-SVC  ( 1030):   }
+06-10 14:37:06.312 V/FA-SVC  ( 1030): }
+06-10 14:37:06.312 V/FA-SVC  ( 1030): Not stopping services. fetch, network, upload: false, true, false
+06-10 14:37:06.313 V/FA-SVC  ( 1030): Uploading data. size: 546
+06-10 14:37:06.372 D/ProfileInstaller(27519): Installing profile for com.song.gomo
+06-10 14:37:06.447 V/FA-SVC  ( 1030): Upload scheduled in approximately ms: 3599997
+06-10 14:37:06.447 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:37:06.451 V/FA-SVC  ( 1030): Scheduling upload, millis: 3599997
+06-10 14:37:06.453 V/FA-SVC  ( 1030): Successful upload. Got network response. code, size: 204, 0
+06-10 14:37:06.460 V/FA-SVC  ( 1030): Nothing to upload or uploading impossible
+06-10 14:37:06.460 V/FA-SVC  ( 1030): Unscheduling upload
+06-10 14:37:06.462 V/FA-SVC  ( 1030): Stopping uploading service(s)
+06-10 14:37:07.553 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:37:07.555 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:37:07.558 I/LogUtils(  857): [Places]: ?: PlacesBleScanner stop() [CONTEXT service_id=253 ]
+06-10 14:37:07.558 I/BeaconBle(  857): Scan : No clients left, canceling alarm. [CONTEXT service_id=111 ]
+06-10 14:37:07.558 I/BeaconBle(  857): Scan canceled successfully. [CONTEXT service_id=111 ]
+06-10 14:37:07.560 I/PlacesLogger(  857): [PlaceInferenceEngine]: [anon] Changed inference mode: 0 [CONTEXT service_id=253 ]
+06-10 14:37:07.563 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:37:07.563 I/LogUtils(  857): [Places]: ?: Couldn't find platform key file. [CONTEXT service_id=253 ]
+06-10 14:37:07.566 W/GCoreFlp(  857): No location to return for getLastLocation()
+06-10 14:37:07.575 I/GeofencerStateMachine(  857): removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_PENDING_INTENT pendingIntent=PendingIntent[creatorPackage=com.google.android.gms], packageName=com.google.android.gms]
+06-10 14:37:08.147 W/MessageQueue(  857): Handler (aekz) {4d97cd8} sending message to a Handler on a dead thread
+06-10 14:37:08.147 W/MessageQueue(  857): java.lang.IllegalStateException: Handler (aekz) {4d97cd8} sending message to a Handler on a dead thread
+06-10 14:37:08.147 W/MessageQueue(  857): 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:558)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at android.os.Handler.enqueueMessage(Handler.java:754)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at android.os.Handler.sendMessageAtTime(Handler.java:703)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at aekz.sendMessageAtTime(:com.google.android.gms@202414019@20.24.14 (040400-319035315):0)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at android.os.Handler.sendMessageDelayed(Handler.java:673)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at android.os.Handler.post(Handler.java:403)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at bjvu.a(:com.google.android.gms@202414019@20.24.14 (040400-319035315):0)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at bjvu.run(:com.google.android.gms@202414019@20.24.14 (040400-319035315):4)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at soy.b(:com.google.android.gms@202414019@20.24.14 (040400-319035315):12)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at soy.run(:com.google.android.gms@202414019@20.24.14 (040400-319035315):7)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at sux.run(:com.google.android.gms@202414019@20.24.14 (040400-319035315):0)
+06-10 14:37:08.147 W/MessageQueue(  857): 	at java.lang.Thread.run(Thread.java:919)
+06-10 14:37:10.054 D/WificondControl(  378): Scan result ready event
+06-10 14:37:10.347 E/ResolverController(  175): No valid NAT64 prefix (102, <unspecified>/0)
+06-10 14:37:10.538 E/memtrack(  378): Couldn't load memtrack module
+06-10 14:37:10.538 W/android.os.Debug(  378): failed to get memory consumption info: -1
+06-10 14:37:10.720 W/WindowManager(  378): removeWindowToken: Attempted to remove non-existing token: android.os.Binder@3e78e58
