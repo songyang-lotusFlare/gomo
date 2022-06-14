@@ -1,7 +1,6 @@
-package com.song.gomo.data.model.datasource
+package com.song.gomo.data.datastore
 
 import android.content.Context
-import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
@@ -92,7 +91,7 @@ class PreferencesDataStore @Inject constructor(@ApplicationContext appContext: C
         }
     }
 
-    private fun mapTokenPreferences(it: Preferences) : TokenPreferences{
+    private fun mapTokenPreferences(it: Preferences) : TokenPreferences {
         val idAuthorization = it[PreferencesKeys.ID_TOKEN_KEY] ?: ""
         val refreshAuthorization = it[PreferencesKeys.REFRESH_TOKEN_KEY] ?: ""
         return TokenPreferences(idAuthorization, refreshAuthorization)
@@ -124,7 +123,7 @@ class PreferencesDataStore @Inject constructor(@ApplicationContext appContext: C
             it[PreferencesKeys.PHONE_NUMBER_KEY] = phoneNumber
         }
     }
-    private fun mapUserPreferences(it: Preferences) : UserPreferences{
+    private fun mapUserPreferences(it: Preferences) : UserPreferences {
         val gomoNumber = it[PreferencesKeys.GOMO_NUMBER_KEY] ?: ""
         val phoneNumber = it[PreferencesKeys.PHONE_NUMBER_KEY] ?: ""
         return UserPreferences(gomoNumber = gomoNumber, phoneNumber = phoneNumber)

@@ -1,17 +1,12 @@
 package com.song.gomo.ui.shop
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.viewModels
 import com.song.gomo.R
 import com.song.gomo.databinding.FragmentShopBinding
-import com.song.gomo.databinding.ToolbarMainBinding
-import com.song.gomo.widget.ToolbarFragment
+import com.song.gomo.ui.base.ToolbarFragment
 
 class ShopIntroduceFragment: ToolbarFragment() {
 

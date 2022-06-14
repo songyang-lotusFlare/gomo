@@ -69,7 +69,7 @@ class MainActivity : BaseActivity() {
 
         // when fragment changed, judge bottomNavigationView show or hide
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            Log.d("hynl", "initView destination : ${destination.label}")
+
             when {
                 destination.label!!.contains("login") -> {
                     navView.visibility = View.GONE
@@ -84,50 +84,43 @@ class MainActivity : BaseActivity() {
         }
 
         with(navView) {
-//            itemIconTintList = null
             labelVisibilityMode = LABEL_VISIBILITY_LABELED
             itemTextAppearanceActive
-//            setOnItemReselectedListener{
-//                Log.d("hynl", "initView: reSelectItem ${it.itemId} ")
-//
-//            }
+            setOnItemReselectedListener{
+            //execute reselected  like: refresh
 
-            Log.d("hynl", "initView: selectItem before ")
+            }
+
             setOnItemSelectedListener {
-                Log.d("hynl", "initView: selectItem ${it.itemId} ")
+            //
                 return@setOnItemSelectedListener true
             }
-//            badgeTip = getOrCreateBadge(R.id.navigation_account)
-//            badgeTip.isVisible = true
         }
 
         // Navigate next fragment & init background Sth
-        startNext(navController)
+        executeBackgroundTask(navController)
         navView.setupWithNavController(navController)
     }
 
 
 
-    private fun startNext(navController : NavController) {
+    private fun executeBackgroundTask(navController : NavController) {
         lifecycleScope.launch {
             delay(2000)
             keepOnScreen.compareAndSet(true, false)
         }
+        //when finish ! set true
         isInitReady = true
         splashScreen.setKeepOnScreenCondition {
             keepOnScreen.get()
         }
-        Log.d("hynl", "startNext: $application")
         //test to nav
         if(userViewModel.getCurrentStatus()) {
             navController.navigate(R.id.login)
         } else {
             navController.navigate(R.id.navigation_home)
         }
-
-
     }
-
 
     override fun onBackPressed() {
         if (!HandleBackUtil.handleBackPress(navHostFragment?.childFragmentManager)) {

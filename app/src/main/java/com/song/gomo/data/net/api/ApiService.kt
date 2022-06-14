@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.song.gomo.api
+package com.song.gomo.data.net.api
 
 import com.song.gomo.data.model.Entity
 import okhttp3.OkHttpClient
@@ -28,29 +28,7 @@ import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("search/photos")
-    suspend fun searchPhotos(
-        @Query("query") query: String,
-        @Query("page") page: Int,
+    @GET("XX/XX")
+    suspend fun searchPhotos(@Query("query") query: String, @Query("page") page: Int, ): Call<Entity>
 
-    ): Call<Entity>
-
-    companion object {
-        private const val BASE_URL = "https://xxx.com"
-
-        fun create(): ApiService {
-            val logger = HttpLoggingInterceptor().apply { level = Level.BASIC }
-
-            val client = OkHttpClient.Builder()
-                .addInterceptor(logger)
-                .build()
-
-            return Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .client(client)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build()
-                .create(ApiService::class.java)
-        }
-    }
 }

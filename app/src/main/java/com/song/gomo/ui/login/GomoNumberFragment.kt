@@ -1,12 +1,10 @@
 package com.song.gomo.ui.login
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.song.gomo.R
-import com.song.gomo.widget.ToolbarFragment
+import com.song.gomo.ui.base.ToolbarFragment
 import com.song.gomo.databinding.FragmentGomoNumberBinding
 
 // TODO: Rename parameter arguments, choose names that match

@@ -1,6 +1,7 @@
 package com.song.gomo.di
 
-import com.song.gomo.api.ApiService
+import com.song.gomo.data.net.ServiceCreator
+import com.song.gomo.data.net.api.ApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -16,8 +17,7 @@ class NetWorkModule {
     @Singleton
     @Provides
     fun providerRetrofit(): ApiService {
-        return ApiService.create()
-
+        return ServiceCreator.create()
     }
 
 }

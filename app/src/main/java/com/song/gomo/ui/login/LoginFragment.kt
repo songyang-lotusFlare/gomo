@@ -41,9 +41,10 @@ class LoginFragment : BaseFragment() {
             if(!Pattern.matches(PatternUtil.REGEX_G_NO, binding.etLoginInput.text.toString())) {
                 //toast
                 showShortToast(R.string.login_error_toast_mismatch)
+
             } else {
                 //match : navigation
-
+                findNavController().navigate(R.id.action_global_home)
             }
         }
         binding.cardShop.setOnClickListener {

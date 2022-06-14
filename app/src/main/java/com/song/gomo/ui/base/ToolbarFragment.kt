@@ -1,4 +1,4 @@
-package com.song.gomo.widget
+package com.song.gomo.ui.base
 
 import android.os.Bundle
 import android.text.TextUtils
