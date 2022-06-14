@@ -6,17 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import com.song.gomo.R
 import com.song.gomo.databinding.FragmentShopBinding
+import com.song.gomo.databinding.ToolbarMainBinding
 import com.song.gomo.widget.ToolbarFragment
 
 class ShopIntroduceFragment: ToolbarFragment() {
 
 
     private lateinit var binding: FragmentShopBinding
-
-
+    
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -24,16 +25,13 @@ class ShopIntroduceFragment: ToolbarFragment() {
     ): View {
 
         binding = FragmentShopBinding.inflate(inflater, container, false)
-        toolbarRootView = binding.toolbar.toolbarRoot
-//        toolbarBinding = ToolbarMainBinding.inflate(inflater, container, false)
-
-
+        toolbarBinding = binding.toolbar
+        initView()
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initView()
     }
 
     private fun initView() {

@@ -22,8 +22,7 @@ import q.rorbin.badgeview.QBadgeView
 open class ToolbarFragment : BaseFragment() {
 
     private lateinit var qBadgeView: Badge
-//    protected lateinit var toolbarBinding: ToolbarMainBinding
-    protected var toolbarRootView: View? = null
+    protected lateinit var toolbarBinding: ToolbarMainBinding
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -31,101 +30,71 @@ open class ToolbarFragment : BaseFragment() {
     }
 
     protected fun setToolbarBackListener(click: () -> Unit) {
-        toolbarRootView?.let {
-            it.findViewById<ImageView>(R.id.toolbar_back).setOnClickListener {
-            Log.d("hynl", "click: toolbar 222")
+        Log.d("hynl", "click: toolbar 111 ${toolbarBinding.toolbarBack}")
+        toolbarBinding.toolbarBack.setOnClickListener{
+            Log.d("hynl", "click: toolbar 333")
             click.invoke()
-        }  }
+        }
 
-//        toolbarBinding.toolbarBack.setOnClickListener {
-//
-//        }
     }
 
     protected fun setMainSubToolbarTitle(mainTitle: String, subTitle: String) {
-//        val doubleGroup = toolbarBinding.groupDoubleTitle
-//        val singleGroup = toolbarBinding.groupDoubleTitle
-//        val mTitle = toolbarBinding.toolbarMainTitle
-//        val sTitle = toolbarBinding.toolbarSubTitle
-        toolbarRootView?.let {
-            val doubleGroup: Group = it.findViewById(R.id.group_double_title)
-            val singleGroup: Group = it.findViewById(R.id.group_single_title)
-            val mTitle: TextView = it.findViewById(R.id.toolbar_main_title)
-            val sTitle: TextView = it.findViewById(R.id.toolbar_sub_title)
 
-
+        with(toolbarBinding) {
             if (TextUtils.isEmpty(mainTitle) && TextUtils.isEmpty(subTitle)) {
-                doubleGroup.visibility = View.GONE
-                doubleGroup.visibility = View.GONE
-                singleGroup.visibility = View.GONE
+                groupDoubleTitle.visibility = View.GONE
+                groupDoubleTitle.visibility = View.GONE
+                groupSingleTitle.visibility = View.GONE
             } else if (TextUtils.isEmpty(mainTitle) || TextUtils.isEmpty(subTitle)) {
-                doubleGroup.visibility = View.GONE
+                groupDoubleTitle.visibility = View.GONE
                 setToolbarTitle(if (TextUtils.isEmpty(mainTitle)) subTitle else mainTitle )
             } else {
-                singleGroup.visibility = View.GONE
-                doubleGroup.visibility = View.VISIBLE
-                mTitle.text = mainTitle
-                sTitle.text = subTitle
+                groupSingleTitle.visibility = View.GONE
+                groupDoubleTitle.visibility = View.VISIBLE
+                toolbarMainTitle.text = mainTitle
+                toolbarSubTitle.text = subTitle
             }
         }
-
     }
 
-
     protected fun setToolbarTitle(title: String) {
-        toolbarRootView?.let {
-            val doubleGroup: Group = it.findViewById(R.id.group_double_title)
-            val singleGroup: Group = it.findViewById(R.id.group_single_title)
-            val tTitle: TextView = it.findViewById(R.id.toolbar_title)
-
+        with(toolbarBinding) {
             if (TextUtils.isEmpty(title)) {
-                tTitle.visibility = View.GONE
+                toolbarTitle.visibility = View.GONE
             } else {
-                singleGroup.visibility = View.VISIBLE
-                doubleGroup.visibility = View.GONE
-                tTitle.text = title
+                groupSingleTitle.visibility = View.VISIBLE
+                groupDoubleTitle.visibility = View.GONE
+                toolbarTitle.text = title
             }
         }
-
     }
 
     // rightmost icon or only icon
     protected fun setToolbarIcon(resId: Int, click: ()-> Unit) {
-        toolbarRootView?.let {
-            val icon: ImageView = it.findViewById(R.id.toolbar_img_rightmost)
 
-            icon.visibility = View.VISIBLE
-            icon.setOnClickListener {
-                click.invoke()
-            }
-            // if need badge, can do ...
-            qBadgeView = QBadgeView(context).setBadgeGravity(Gravity.END or Gravity.TOP)
-                .bindTarget(icon)
+        toolbarBinding.toolbarImgRightmost.visibility = View.VISIBLE
+        toolbarBinding.toolbarImgRightmost.setOnClickListener {
+            click.invoke()
         }
-
-
+        // if need badge, can do ...
+        qBadgeView = QBadgeView(context).setBadgeGravity(Gravity.END or Gravity.TOP)
+            .bindTarget(toolbarBinding.toolbarImgRightmost)
     }
 
     // second icon
     protected fun setMultiToolbarIcon(resIdRightmost: Int,clickOne: ()-> Unit, resIdSub: Int, clickTwo: () -> Unit) {
-        toolbarRootView?.let {
-            val iconRightmost: ImageView = it.findViewById(R.id.toolbar_img_rightmost)
-            iconRightmost.visibility = View.VISIBLE
-            val iconSub: ImageView = it.findViewById(R.id.toolbar_img_sub)
-            iconSub.visibility = View.GONE
-            iconRightmost.setImageResource(resIdRightmost)
-            iconSub.setImageResource(resIdSub)
-            iconRightmost.setOnClickListener {
+        with(toolbarBinding) {
+            toolbarImgRightmost.visibility = View.VISIBLE
+            toolbarImgSub.visibility = View.VISIBLE
+            toolbarImgRightmost.setImageResource(resIdRightmost)
+            toolbarImgSub.setImageResource(resIdSub)
+            toolbarImgRightmost.setOnClickListener {
                 clickOne.invoke()
             }
-            iconSub.setOnClickListener {
+            toolbarImgSub.setOnClickListener {
                 clickTwo.invoke()
             }
-
-            qBadgeView = QBadgeView(context).setBadgeGravity(Gravity.END or Gravity.TOP)
-                .bindTarget(iconRightmost)
         }
-
     }
 
     override fun onBackPressed(): Boolean {

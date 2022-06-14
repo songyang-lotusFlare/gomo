@@ -35,6 +35,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        dataBinding= true
     }
 }
 
@@ -58,6 +59,7 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutinesVersion"
     //splash
     implementation 'androidx.core:core-splashscreen:1.0.0-rc01'
+    implementation 'androidx.databinding:databinding-runtime:4.2.2'
     //room
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
