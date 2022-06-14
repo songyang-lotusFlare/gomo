@@ -36,15 +36,8 @@ class ShopIntroduceFragment: ToolbarFragment() {
 
     private fun initView() {
 
-        binding.toolbar.toolbarBack.setOnClickListener{
-            Log.d("hynl", "click: toolbar!!!!!!!")
-        }
-        binding.btnBuy.setOnClickListener{
-            Log.d("hynl", "click: bottom bar !!!!!!!")
-        }
         setToolbarTitle(getString(R.string.title_shop))
         setToolbarBackListener {
-            Log.d("hynl", "click: toolbar")
             onBackPressed()
         }
         setMultiToolbarIcon(R.drawable.ic_menu_shop,

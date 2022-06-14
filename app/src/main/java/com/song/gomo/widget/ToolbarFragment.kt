@@ -30,12 +30,9 @@ open class ToolbarFragment : BaseFragment() {
     }
 
     protected fun setToolbarBackListener(click: () -> Unit) {
-        Log.d("hynl", "click: toolbar 111 ${toolbarBinding.toolbarBack}")
         toolbarBinding.toolbarBack.setOnClickListener{
-            Log.d("hynl", "click: toolbar 333")
             click.invoke()
         }
-
     }
 
     protected fun setMainSubToolbarTitle(mainTitle: String, subTitle: String) {
