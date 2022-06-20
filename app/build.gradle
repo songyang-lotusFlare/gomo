@@ -42,6 +42,8 @@ dependencies {
 
 
     implementation project(":module")
+    implementation project(":data")
+
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"

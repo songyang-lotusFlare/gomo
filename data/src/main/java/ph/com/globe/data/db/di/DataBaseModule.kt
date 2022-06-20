@@ -17,7 +17,7 @@ class DataBaseModule {
 
     @Provides
     @Singleton
-    fun providerGomoDatabase(@ApplicationContext context: ApplicationContext): GomoDatabase =
+    fun providerGomoDatabase(@ApplicationContext context: Context): GomoDatabase =
         GomoDatabase.getInstance(context as Context)
 
     @Provides
