@@ -22,6 +22,7 @@ import com.song.gomo.ui.sharedelement.UserViewModel
 import com.song.gomo.widget.CommonAlertDialog
 import com.song.gomo.utils.HandleBackUtil
 import com.song.gomo.utils.applicationViewModels
+import com.song.module.profile.ProfileModuleManager
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.*
 import java.util.concurrent.atomic.AtomicBoolean

@@ -8,19 +8,19 @@ package com.song.module.profile.usecase
 
 import com.song.common.LfResult
 import com.song.common.errors.profile.GetGomoUserError
+import com.song.data.db.di.RepositoryManager
 import com.song.model.profile.domin_models.GomoUserModel
-import com.song.module.IDataManagers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
-import kotlinx.coroutines.flow.fold
 import javax.inject.Inject
 
 
-class GomoUserUseCase @Inject constructor(repoManager: IDataManagers) {
+class GomoUserUseCase @Inject constructor(repoManager: RepositoryManager) {
 
     private val gomoUserRepo = repoManager.getGomoUserDataRepo()
 
-//    suspend fun execute(): Flow<LfResult<GomoUserModel?, GetGomoUserError>> =
+    suspend fun execute(): Flow<LfResult<GomoUserModel?, GetGomoUserError>>  =
+        flowOf()
 //        gomoUserRepo.getGomoUser()getGomoUser
 
 }
