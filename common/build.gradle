@@ -1,6 +1,5 @@
 plugins {
     id 'java-library'
-    id 'org.jetbrains.kotlin.jvm'
     id 'kotlin'
     id 'kotlin-kapt'
 }
@@ -10,8 +9,7 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$project.ktxVersion"
-
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$project.kotlinVersion"
     // Moshi
     implementation "com.squareup.moshi:moshi:$project.moshiVersion"
     kapt "com.squareup.moshi:moshi-kotlin-codegen:$project.moshiVersion"
