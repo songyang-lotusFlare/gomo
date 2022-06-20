@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1050786930121:android:f9796e0f6eacf7d7e89c18",
+        "mobilesdk_app_id": "1:1050786930121:android:125f2697b549c52be89c18",
         "android_client_info": {
-          "package_name": "com.song.gomo"
+          "package_name": "ph.com.globe.gomo"
         }
       },
       "oauth_client": [

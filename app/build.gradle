@@ -11,7 +11,7 @@ android {
     compileSdk rootProject.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.song.gomo"
+        applicationId "ph.com.globe.gomo"
         minSdk rootProject.minSdkVersion
         targetSdk rootProject.targetSdkVersion
         versionCode 1
@@ -42,7 +42,7 @@ android {
 dependencies {
 
 
-    implementation project(":module")
+//    implementation project(":module")
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
@@ -71,7 +71,6 @@ dependencies {
     //hilt
     kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
     implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
-    kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
 
     //navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"

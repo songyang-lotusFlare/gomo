@@ -9,7 +9,7 @@
         app:startDestination="@id/gomoHomeFragment">
         <fragment
             android:id="@+id/gomoHomeFragment"
-            android:name="com.song.gomo.ui.home.HomeFragment"
+            android:name="ph.com.globe.gomo.ui.home.HomeFragment"
             android:label="@string/title_home"
             tools:layout="@layout/fragment_home" />
     </navigation>
@@ -18,7 +18,7 @@
         app:startDestination="@id/moCredsFragment">
         <fragment
             android:id="@+id/moCredsFragment"
-            android:name="com.song.gomo.ui.mocreds.MoCredsFragment"
+            android:name="ph.com.globe.gomo.ui.mocreds.MoCredsFragment"
             android:label="@string/title_cred"
             tools:layout="@layout/fragment_creds" />
     </navigation>
@@ -27,7 +27,7 @@
         app:startDestination="@id/shopFragment">
         <fragment
             android:id="@+id/shopFragment"
-            android:name="com.song.gomo.ui.shop.ShopFragment"
+            android:name="ph.com.globe.gomo.ui.shop.ShopFragment"
             android:label="@string/title_shop"
             tools:layout="@layout/fragment_shop" />
     </navigation>
@@ -36,7 +36,7 @@
         app:startDestination="@id/accountFragment">
         <fragment
             android:id="@+id/accountFragment"
-            android:name="com.song.gomo.ui.account.AccountFragment"
+            android:name="ph.com.globe.gomo.ui.account.AccountFragment"
             android:label="@string/title_account"
             tools:layout="@layout/fragment_creds" />
     </navigation>
@@ -45,7 +45,7 @@
         app:startDestination="@id/menuFragment">
         <fragment
             android:id="@+id/menuFragment"
-            android:name="com.song.gomo.ui.menu.MenuFragment"
+            android:name="ph.com.globe.gomo.ui.menu.MenuFragment"
             android:label="@string/title_menu"
             tools:layout="@layout/fragment_creds" />
     </navigation>
@@ -54,7 +54,7 @@
         app:startDestination="@id/LoginFragment">
         <fragment
             android:id="@+id/LoginFragment"
-            android:name="com.song.gomo.ui.login.LoginFragment"
+            android:name="ph.com.globe.gomo.ui.login.LoginFragment"
             android:label="@string/login"
             tools:layout="@layout/fragment_login" >
             <action
@@ -64,7 +64,7 @@
     </navigation>
     <fragment
         android:id="@+id/ShopIntroduceFragment"
-        android:name="com.song.gomo.ui.shop.ShopIntroduceFragment"
+        android:name="ph.com.globe.gomo.ui.shop.ShopIntroduceFragment"
         android:label="@string/label_fragment_shop_introduce"
         tools:layout="@layout/fragment_shop" >
     </fragment>

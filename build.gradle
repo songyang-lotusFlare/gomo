@@ -42,7 +42,7 @@ buildscript {
         viewPagerVersion = '1.0.0'
         workVersion = '2.7.1'
         // Moshi
-        moshiVersion = '1.12.0'
+        moshiVersion = '1.13.0'
 
         profileInstallerVersion = '1.2.0-beta01'
         uiAutomatorVersion = '2.2.0'
@@ -62,7 +62,7 @@ buildscript {
     dependencies {
 
         classpath "com.android.tools.build:gradle:$gradleVersion"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$ktlintVersion"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
         classpath 'com.google.gms:google-services:4.3.10'

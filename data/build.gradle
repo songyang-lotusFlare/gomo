@@ -34,11 +34,11 @@ android {
 
 dependencies {
 
-    implementation project(':model')
-    implementation project(':common')
-//    implementation project(':module')
+    implementation project(":model")
+    implementation project(":common")
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+
+    implementation "androidx.core:core-ktx:$project.ktxVersion"
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.4.0'
 
@@ -50,7 +50,6 @@ dependencies {
     //hilt
     kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
     implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
-    kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
 
     //retrofit2
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttpLoggingVersion"
