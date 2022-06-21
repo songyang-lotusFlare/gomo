@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
+import ph.com.globe.domin.profile.ProfileModuleManager
 import ph.com.globe.gomo.R
 import ph.com.globe.gomo.databinding.FragmentLoginBinding
 import ph.com.globe.gomo.ui.base.BaseFragment
@@ -14,7 +15,6 @@ import ph.com.globe.gomo.ui.sharedelement.UserViewModel
 import ph.com.globe.gomo.utils.PatternUtil
 import ph.com.globe.gomo.utils.applicationViewModels
 import ph.com.globe.gomo.utils.safeNavigate
-import ph.com.globe.module.profile.ProfileModuleManager
 import java.util.regex.Pattern
 import javax.inject.Inject
 
