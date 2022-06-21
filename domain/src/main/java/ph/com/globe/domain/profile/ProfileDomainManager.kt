@@ -15,3 +15,4 @@ internal class ProfileDomainManager @Inject constructor(
 
     override suspend fun getGomoUserCase(): Flow<LfResult<GomoUserModel?, GetGomoUserError>> = gomoUserUseCase.execute()
 }
+
