@@ -28,3 +28,4 @@ data class GetGomoUserResult(
     val gomoNumber: String,
     val phoneNumber: String? = null,
 )
+
