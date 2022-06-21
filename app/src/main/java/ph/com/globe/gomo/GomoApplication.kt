@@ -11,7 +11,7 @@ import javax.inject.Inject
 @HiltAndroidApp
 class GomoApplication : Application(), ViewModelStoreOwner {
 
-    private var viewModelStore : ViewModelStore? = null
+    private var viewModelStore: ViewModelStore? = null
 
     @Inject
     lateinit var userViewModelFactory: UserViewModelFactory
@@ -22,7 +22,7 @@ class GomoApplication : Application(), ViewModelStoreOwner {
     }
 
     override fun getViewModelStore(): ViewModelStore {
-        if(viewModelStore == null) {
+        if (viewModelStore == null) {
             viewModelStore = ViewModelStore()
         }
         return viewModelStore as ViewModelStore
