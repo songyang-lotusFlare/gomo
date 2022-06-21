@@ -14,7 +14,6 @@ private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 class GomoNumberFragment : ToolbarFragment() {
-
     private var param1: String? = null
     private var param2: String? = null
 
@@ -36,5 +35,4 @@ class GomoNumberFragment : ToolbarFragment() {
         // Inflate the layout for this fragment
         return binding.root
     }
-
 }

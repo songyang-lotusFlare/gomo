@@ -9,11 +9,11 @@ import ph.com.globe.common.LfResult
 import ph.com.globe.common.errors.profile.GetGomoUserError
 import javax.inject.Inject
 
-class GomoProfileService @Inject constructor(
+internal class GomoProfileService @Inject constructor(
     private val getGomoUserCall: GetGomoUserCall
-){
+): IGomoUserService {
 
-     suspend fun getGomoUser(params: GetGomoUserParams): LfResult<GetGomoUserResult, GetGomoUserError> =
+     override suspend fun getGomoUser(params: GetGomoUserParams): LfResult<GetGomoUserResult, GetGomoUserError> =
         withContext(Dispatchers.IO) {
             getGomoUserCall.execute(params)
         }

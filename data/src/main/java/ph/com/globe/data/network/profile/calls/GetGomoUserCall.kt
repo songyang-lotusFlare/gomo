@@ -15,12 +15,11 @@ import ph.com.globe.model.profile.response_models.toQueryMap
 import retrofit2.Response
 import javax.inject.Inject
 
-class GetGomoUserCall @Inject constructor(
+internal class GetGomoUserCall @Inject constructor(
     private val profileApiService: ProfileApiService
 ) {
 
     suspend fun execute(params: GetGomoUserParams): LfResult<GetGomoUserResult, GetGomoUserError> {
-
         //get headMap
         val headerMap = mapOf<String, String>()
 

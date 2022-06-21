@@ -14,5 +14,4 @@ class ProfileModuleManager @Inject constructor(
 ) {
 
     suspend fun getGomoUserCase(): Flow<LfResult<GomoUserModel?, GetGomoUserError>> = gomoUserUseCase.execute()
-
 }

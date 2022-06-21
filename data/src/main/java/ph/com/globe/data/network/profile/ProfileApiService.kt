@@ -10,5 +10,4 @@ interface ProfileApiService {
 
     @GET("xxx/xxx")
     suspend fun getGomoUser(@HeaderMap headerMap: Map<String, String>, @QueryMap queryMap: Map<String, String>): Response<GetGomoUserResponse>
-
 }
