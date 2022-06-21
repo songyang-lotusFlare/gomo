@@ -4,7 +4,7 @@
  * Unauthorized copying and distribution of this file, via any medium is strictly prohibited.
  */
 
-package ph.com.globe.module.profile.usecase
+package ph.com.globe.domin.profile.usecase
 
 import ph.com.globe.model.profile.domin_models.GomoUserModel
 import kotlinx.coroutines.flow.Flow

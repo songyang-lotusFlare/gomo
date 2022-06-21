@@ -1,7 +1,7 @@
-package ph.com.globe.module.profile
+package ph.com.globe.domin.profile
 
 import ph.com.globe.model.profile.domin_models.GomoUserModel
-import ph.com.globe.module.profile.usecase.GomoUserUseCase
+import ph.com.globe.domin.profile.usecase.GomoUserUseCase
 import kotlinx.coroutines.flow.Flow
 import ph.com.globe.common.LfResult
 import ph.com.globe.common.errors.profile.GetGomoUserError

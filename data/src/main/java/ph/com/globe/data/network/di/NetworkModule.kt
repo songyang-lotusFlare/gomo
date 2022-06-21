@@ -32,12 +32,8 @@ annotation class BindTwoRetrofit
 
 @Module
 @InstallIn(SingletonComponent::class)
-internal abstract class NetWorkModule {
+internal class NetWorkModule {
 
-    //manager
-    @Singleton
-    @Binds
-    abstract fun providerNetworkService(networkServices: NetworkServices): INetworkService
 
     //Interceptor
     @Singleton

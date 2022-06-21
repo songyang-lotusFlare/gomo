@@ -1,24 +1,19 @@
 package ph.com.globe.gomo.ui.login
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.first
 import ph.com.globe.gomo.R
 import ph.com.globe.gomo.databinding.FragmentLoginBinding
 import ph.com.globe.gomo.ui.base.BaseFragment
 import ph.com.globe.gomo.ui.sharedelement.UserViewModel
 import ph.com.globe.gomo.utils.PatternUtil
 import ph.com.globe.gomo.utils.applicationViewModels
-import ph.com.globe.module.profile.ProfileModuleManager
+import ph.com.globe.domin.profile.ProfileModuleManager
 import java.util.regex.Pattern
 import javax.inject.Inject
 

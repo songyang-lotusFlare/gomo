@@ -17,6 +17,6 @@ dependencyResolutionManagement {
 rootProject.name = "gomo"
 include ':app'
 include ':data'
-include ':module'
+include ':domin'
 include ':model'
 include ':common'
