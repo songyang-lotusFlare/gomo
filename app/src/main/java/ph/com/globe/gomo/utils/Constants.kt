@@ -23,7 +23,6 @@ package ph.com.globe.gomo.utils
 
 const val DATABASE_NAME = "gomo-db"
 const val DATASTORE_NAME = "data_store"
-const val PLANT_DATA_FILENAME = "plants.json"
 
 const val GOMO_NUMBER = "gomo_number"
 const val PHONE_NUMBER = "phone_number"

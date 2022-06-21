@@ -3,17 +3,13 @@ package ph.com.globe.gomo.ui.base
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
 import ph.com.globe.gomo.widget.CommonAlertDialog
 import ph.com.globe.gomo.widget.CommonProgressBar
 
 
 abstract class BaseFragment : Fragment() {
-
     private var mProgressBar: CommonProgressBar? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,24 +17,28 @@ abstract class BaseFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        Log.d("hynl", "onViewCreated: ${javaClass.simpleName}" )
+        Log.d("hynl", "onViewCreated: ${javaClass.simpleName}")
         super.onViewCreated(view, savedInstanceState)
     }
 
     // toast
-    fun showLongToast(text: String) {
-        Toast.makeText(requireContext().applicationContext, text, Toast.LENGTH_LONG).show()
+    private fun showLongToast(text: String) {
+        context?.let {
+            Toast.makeText(it, text, Toast.LENGTH_LONG).show()
+        }
     }
 
-    fun showShortToast(text: String) {
-        Toast.makeText(requireContext().applicationContext, text, Toast.LENGTH_SHORT).show()
+    private fun showShortToast(text: String) {
+        context?.let {
+            Toast.makeText(it, text, Toast.LENGTH_SHORT).show()
+        }
     }
 
-    fun showLongToast(stringRes: Int) {
+    protected fun showLongToast(stringRes: Int) {
         showLongToast(resources.getString(stringRes))
     }
 
-    fun showShortToast(stringRes: Int) {
+    protected fun showShortToast(stringRes: Int) {
         showShortToast(resources.getString(stringRes))
     }
 
@@ -88,8 +88,7 @@ abstract class BaseFragment : Fragment() {
         }
     }
 
-
-    open fun onBackPressed() : Boolean {
+    open fun onBackPressed(): Boolean {
         return false
     }
 }

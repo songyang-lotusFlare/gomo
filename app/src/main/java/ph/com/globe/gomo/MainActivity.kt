@@ -11,7 +11,6 @@ import androidx.navigation.NavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.badge.BadgeDrawable
 import com.google.android.material.navigation.NavigationBarView.LABEL_VISIBILITY_LABELED
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.*
@@ -20,25 +19,22 @@ import ph.com.globe.gomo.ui.base.BaseActivity
 import ph.com.globe.gomo.ui.sharedelement.UserViewModel
 import ph.com.globe.gomo.utils.HandleBackUtil
 import ph.com.globe.gomo.utils.applicationViewModels
+import ph.com.globe.gomo.utils.safeNavigate
 import ph.com.globe.gomo.widget.CommonAlertDialog
 import java.util.concurrent.atomic.AtomicBoolean
 
 @AndroidEntryPoint
 class MainActivity : BaseActivity() {
-
     private lateinit var binding: ActivityMainBinding
     private var navHostFragment: Fragment? = null
 
     private var keepOnScreen = AtomicBoolean(true)
     private lateinit var splashScreen: SplashScreen
     private var isInitReady = false
-    private lateinit var badgeTip : BadgeDrawable
 
-
-    private val userViewModel : UserViewModel by applicationViewModels()
+    private val userViewModel: UserViewModel by applicationViewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -47,18 +43,19 @@ class MainActivity : BaseActivity() {
     }
 
     private fun initView() {
-
         val navView: BottomNavigationView = binding.navView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main)
-        binding.root.viewTreeObserver.addOnPreDrawListener (object : ViewTreeObserver.OnPreDrawListener {
+        navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main)
+        binding.root.viewTreeObserver.addOnPreDrawListener(object :
+            ViewTreeObserver.OnPreDrawListener {
             override fun onPreDraw(): Boolean {
                 return if (isInitReady) {
                     //monitor background tasks completed
                     binding.root.viewTreeObserver.removeOnPreDrawListener(this)
                     true
-                }else{
+                } else {
                     false
                 }
             }
@@ -66,12 +63,11 @@ class MainActivity : BaseActivity() {
 
         // when fragment changed, judge bottomNavigationView show or hide
         navController.addOnDestinationChangedListener { _, destination, _ ->
-
             when {
-                destination.label!!.contains("login") -> {
+                destination.label?.contains("login") == true -> {
                     navView.visibility = View.GONE
                 }
-                destination.label!!.contains("shopIntroduce") -> {
+                destination.label?.contains("shopIntroduce") == true -> {
                     navView.visibility = View.GONE
                 }
                 else -> {
@@ -82,40 +78,43 @@ class MainActivity : BaseActivity() {
 
         with(navView) {
             labelVisibilityMode = LABEL_VISIBILITY_LABELED
-            itemTextAppearanceActive
-            setOnItemReselectedListener{
-            //execute reselected  like: refresh
+
+            setOnItemReselectedListener {
+                //execute reselected, like: refresh
 
             }
 
             setOnItemSelectedListener {
-            //
                 return@setOnItemSelectedListener true
             }
+
+            setupWithNavController(navController)
         }
 
         // Navigate next fragment & init background Sth
         executeBackgroundTask(navController)
-        navView.setupWithNavController(navController)
     }
 
-
-
-    private fun executeBackgroundTask(navController : NavController) {
+    /**
+     *  mock the navigation
+     */
+    private fun executeBackgroundTask(navController: NavController) {
         lifecycleScope.launch {
             delay(2000)
             keepOnScreen.compareAndSet(true, false)
         }
-        //when finish ! set true
+
+        //when finish set the isInitReady is true
         isInitReady = true
         splashScreen.setKeepOnScreenCondition {
             keepOnScreen.get()
         }
+
         //test to nav
-        if(userViewModel.getCurrentStatus()) {
-            navController.navigate(R.id.login)
+        if (userViewModel.getCurrentStatus()) {
+            navController.safeNavigate(R.id.login)
         } else {
-            navController.navigate(R.id.navigation_home)
+            navController.safeNavigate(R.id.navigation_home)
         }
     }
 
@@ -127,14 +126,13 @@ class MainActivity : BaseActivity() {
                 setContent(getString(R.string.exit))
                 setLeftButton(getString(R.string.no))
                 setRightButton(getString(R.string.yes))
-                setLeftButtonListener(View.OnClickListener { dismiss() })
-                setRightButtonListener(View.OnClickListener {
+                setLeftButtonListener { dismiss() }
+                setRightButtonListener {
                     super.onBackPressed()
                     dismiss()
                     finish()
-                })
+                }
                 show()
-                //UiUtil.adjustDialogGravity(this, context)
             }
         }
     }
