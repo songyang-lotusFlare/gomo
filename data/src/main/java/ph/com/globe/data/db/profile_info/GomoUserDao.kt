@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 @Dao
-interface GomoUserDao {
+internal interface GomoUserDao {
 
     @Query("SELECT * from gomo_user")
     fun getUser(): Flow<GomoUserEntity>
@@ -21,13 +21,13 @@ interface GomoUserDao {
 }
 
 //Dao query class
-class GomoUserQueryDao @Inject constructor(
+internal class GomoUserQueryDao @Inject constructor(
     private val gomoUserDao: GomoUserDao
 ) {
     fun getAllUser(): Flow<GomoUserEntity> =
         gomoUserDao.getUser()
 
     suspend fun deleteAllUser() = gomoUserDao.deleteUser()
-
 }
+
 

@@ -1,5 +1,6 @@
 package ph.com.globe.data.network
 
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -9,12 +10,32 @@ import retrofit2.Retrofit
 import javax.inject.Qualifier
 import javax.inject.Singleton
 
+//Define different OkHttp qualifier
+@Qualifier
+@Retention(AnnotationRetention.BINARY)
+annotation class BindOneOkHttpClient
+
+@Qualifier
+@Retention(AnnotationRetention.BINARY)
+annotation class BindTwoOkHttpClient
+
+
+//Define different Retrofit qualifier
+@Qualifier
+@Retention(AnnotationRetention.BINARY)
+annotation class BindOneRetrofit
+
+@Qualifier
+@Retention(AnnotationRetention.BINARY)
+annotation class BindTwoRetrofit
+
+
 @Module
 @InstallIn(SingletonComponent::class)
 internal class NetWorkModule {
 
-    //Interceptor
 
+    //Interceptor
     @Singleton
     @Provides
     fun providerDemoInterceptor(): DemoInterceptor =
@@ -63,21 +84,3 @@ object URL{
     const val SECOND_URL: String = "www.gomo1.com"
 }
 
-//Define different OkHttp qualifier
-@Qualifier
-@Retention(AnnotationRetention.BINARY)
-annotation class BindOneOkHttpClient
-
-@Qualifier
-@Retention(AnnotationRetention.BINARY)
-annotation class BindTwoOkHttpClient
-
-
-//Define different Retrofit qualifier
-@Qualifier
-@Retention(AnnotationRetention.BINARY)
-annotation class BindOneRetrofit
-
-@Qualifier
-@Retention(AnnotationRetention.BINARY)
-annotation class BindTwoRetrofit

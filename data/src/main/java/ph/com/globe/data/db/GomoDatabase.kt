@@ -9,7 +9,7 @@ import ph.com.globe.data.db.profile_info.GomoUserEntity
 
 
 @Database(entities = [GomoUserEntity::class], version = 0, exportSchema = false)
-abstract class GomoDatabase : RoomDatabase(){
+internal abstract class GomoDatabase : RoomDatabase(){
 
     abstract fun userDao(): GomoUserDao
 

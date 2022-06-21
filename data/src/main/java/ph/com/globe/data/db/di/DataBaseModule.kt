@@ -13,7 +13,7 @@ import javax.inject.Singleton
 
 @InstallIn(SingletonComponent::class)
 @Module
-class DataBaseModule {
+internal class DataBaseModule {
 
     @Provides
     @Singleton
@@ -26,5 +26,4 @@ class DataBaseModule {
         gomoDatabase.userDao()
 
     //todo: add more Dao ...
-
 }
