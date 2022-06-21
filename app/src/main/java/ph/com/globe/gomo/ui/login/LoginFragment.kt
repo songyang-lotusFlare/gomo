@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
+import ph.com.globe.domain.profile.IProfileDomainManager
 import ph.com.globe.gomo.R
 import ph.com.globe.gomo.databinding.FragmentLoginBinding
 import ph.com.globe.gomo.ui.base.BaseFragment
 import ph.com.globe.gomo.ui.sharedelement.UserViewModel
 import ph.com.globe.gomo.utils.PatternUtil
 import ph.com.globe.gomo.utils.applicationViewModels
-import ph.com.globe.domin.profile.ProfileModuleManager
 import java.util.regex.Pattern
 import javax.inject.Inject
 
@@ -25,7 +25,7 @@ class LoginFragment : BaseFragment() {
     private lateinit var binding: FragmentLoginBinding
 
     @Inject
-    lateinit var profileModuleManager: ProfileModuleManager
+    lateinit var profileModuleManager: IProfileDomainManager
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
