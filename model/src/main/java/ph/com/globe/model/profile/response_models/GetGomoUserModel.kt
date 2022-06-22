@@ -2,7 +2,6 @@ package ph.com.globe.model.profile.response_models
 
 import com.squareup.moshi.JsonClass
 
-
 // request params
 data class GetGomoUserParams(
     val id: String,
@@ -11,8 +10,8 @@ data class GetGomoUserParams(
 
 fun GetGomoUserParams.toQueryMap(): Map<String, String> =
     mapOf(
-        "KEY_P1" to (id ?:" "),
-        "KEY_P2" to (other ?:" "),
+        "KEY_P1" to (id ?: " "),
+        "KEY_P2" to (other ?: " "),
     )
 
 // direct Response from net
@@ -29,3 +28,4 @@ data class GetGomoUserResult(
     val gomoNumber: String,
     val phoneNumber: String? = null,
 )
+

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
-import ph.com.globe.domin.profile.ProfileModuleManager
+import ph.com.globe.domain.profile.ProfileDomainManager
 import ph.com.globe.gomo.R
 import ph.com.globe.gomo.databinding.FragmentLoginBinding
 import ph.com.globe.gomo.ui.base.BaseFragment
@@ -25,7 +25,7 @@ class LoginFragment : BaseFragment() {
     private val binding get() = _binding!!
 
     @Inject
-    lateinit var profileModuleManager: ProfileModuleManager
+    lateinit var profileModuleManager: ProfileDomainManager
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -9,8 +9,7 @@ import ph.com.globe.data.db.profile_info.GomoUserEntity
 
 
 @Database(entities = [GomoUserEntity::class], version = 0, exportSchema = false)
-internal abstract class GomoDatabase : RoomDatabase(){
-
+internal abstract class GomoDatabase : RoomDatabase() {
     abstract fun userDao(): GomoUserDao
 
     //todo :add more Dao ...
@@ -18,9 +17,10 @@ internal abstract class GomoDatabase : RoomDatabase(){
     companion object {
         const val NAME = "Globe.db"
 
-        @Volatile private var instance : GomoDatabase? = null
+        @Volatile
+        private var instance: GomoDatabase? = null
 
-        fun getInstance(context : Context) : GomoDatabase {
+        fun getInstance(context: Context): GomoDatabase {
             return instance ?: synchronized(this) {
                 instance ?: buildDatabase(context).also { instance = it }
             }

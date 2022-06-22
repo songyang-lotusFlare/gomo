@@ -7,7 +7,9 @@ import retrofit2.http.HeaderMap
 import retrofit2.http.QueryMap
 
 interface ProfileApiService {
-
     @GET("xxx/xxx")
-    suspend fun getGomoUser(@HeaderMap headerMap: Map<String, String>, @QueryMap queryMap: Map<String, String>): Response<GetGomoUserResponse>
+    suspend fun getGomoUser(
+        @HeaderMap headerMap: Map<String, String>,
+        @QueryMap queryMap: Map<String, String>
+    ): Response<GetGomoUserResponse>
 }

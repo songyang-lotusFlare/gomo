@@ -18,24 +18,25 @@ import javax.inject.Inject
 internal class GetGomoUserCall @Inject constructor(
     private val profileApiService: ProfileApiService
 ) {
-
     suspend fun execute(params: GetGomoUserParams): LfResult<GetGomoUserResult, GetGomoUserError> {
         //get headMap
         val headerMap = mapOf<String, String>()
 
         val response = kotlin.runCatching {
-            profileApiService.getGomoUser(headerMap = headerMap,
+            profileApiService.getGomoUser(
+                headerMap = headerMap,
                 params.toQueryMap()
             )
         }.fold(Response<GetGomoUserResponse>::toLfSdkResult, Throwable::toLFSdkResult)
 
         return response.fold(
-            {LfResult.success(it.result)},
-            {LfResult.failure(it.toSpecific())}
+            { LfResult.success(it.result) },
+            { LfResult.failure(it.toSpecific()) }
         )
     }
 
 }
+
 private fun NetworkError.toSpecific(): GetGomoUserError = GetGomoUserError.General(
     GeneralError.Other(
         this

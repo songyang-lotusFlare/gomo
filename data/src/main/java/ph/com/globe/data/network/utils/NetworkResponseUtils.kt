@@ -66,6 +66,6 @@ internal fun <T> extractError(
 
 internal fun <T> Throwable.toLFSdkResult(): LfResult<T, NetworkError> = when (this) {
     is JsonDataException -> LfResult.failure(NetworkError.ParsingError(this))
-    //is NoInternet -> LfResult.failure(NetworkError.NoInternet)
+//    is NoInternet -> LfResult.failure(NetworkError.NoInternet)
     else -> LfResult.failure(NetworkError.IOError(this))
 }
