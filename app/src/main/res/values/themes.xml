@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Gomo" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Gomo" parent="Theme.Material3.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/theme_red</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -16,14 +16,14 @@
         <item name="android:windowBackground">@color/bg_default</item>
     </style>
 
-    <style name="Theme.Gomo.NoActionBar">
+    <style name="Theme.Gomo.NoActionBar" parent="Theme.Material3.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.Gomo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Gomo.AppBarOverlay" parent="ThemeOverlay.Material3.Dark" />
 
-    <style name="Theme.Gomo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Gomo.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
 
 
     <style name="Theme.SplashScreen.Launcher" parent="Theme.SplashScreen">

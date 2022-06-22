@@ -14,15 +14,15 @@ import ph.com.globe.gomo.ui.base.BaseFragment
 import ph.com.globe.gomo.ui.sharedelement.UserViewModel
 import ph.com.globe.gomo.utils.PatternUtil
 import ph.com.globe.gomo.utils.applicationViewModels
+import ph.com.globe.gomo.utils.safeNavigate
 import java.util.regex.Pattern
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class LoginFragment : BaseFragment() {
-
-
-    val userViewModel : UserViewModel by applicationViewModels()
-    private lateinit var binding: FragmentLoginBinding
+    val userViewModel: UserViewModel by applicationViewModels()
+    private var _binding: FragmentLoginBinding? = null
+    private val binding get() = _binding!!
 
     @Inject
     lateinit var profileModuleManager: ProfileDomainManager
@@ -31,26 +31,29 @@ class LoginFragment : BaseFragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentLoginBinding.inflate(inflater, container, false)
-        initView()
+        _binding = FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    fun initView() {
-        Log.d("hynl", "initView: ${profileModuleManager}")
-        binding.btnLoginGo.setOnClickListener {
-            if(!Pattern.matches(PatternUtil.REGEX_G_NO, binding.etLoginInput.text.toString())) {
-                //toast
-                showShortToast(R.string.login_error_toast_mismatch)
-
-            } else {
-                //match : navigation
-                findNavController().navigate(R.id.action_global_home)
-            }
-        }
-        binding.cardShop.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_shopIntroduceFragment)
-        }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initView()
     }
 
+    private fun initView() {
+        Log.d("hynl", "initView: ${profileModuleManager}")
+        binding.btnLoginGo.setOnClickListener {
+            if (!Pattern.matches(PatternUtil.REGEX_G_NO, binding.etLoginInput.text.toString())) {
+                //toast
+                showShortToast(R.string.login_error_toast_mismatch)
+            } else {
+                //match : navigation
+                findNavController().safeNavigate(R.id.action_global_home)
+            }
+        }
+
+        binding.cardShop.setOnClickListener {
+            findNavController().safeNavigate(R.id.action_loginFragment_to_shopIntroduceFragment)
+        }
+    }
 }
