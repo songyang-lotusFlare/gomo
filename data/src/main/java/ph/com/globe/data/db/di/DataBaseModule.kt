@@ -14,7 +14,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 @Module
 internal class DataBaseModule {
-
     @Provides
     @Singleton
     fun providerGomoDatabase(@ApplicationContext context: Context): GomoDatabase =

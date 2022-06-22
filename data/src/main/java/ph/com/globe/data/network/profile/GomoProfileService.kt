@@ -11,9 +11,8 @@ import javax.inject.Inject
 
 internal class GomoProfileService @Inject constructor(
     private val getGomoUserCall: GetGomoUserCall
-): IGomoUserService {
-
-     override suspend fun getGomoUser(params: GetGomoUserParams): LfResult<GetGomoUserResult, GetGomoUserError> =
+) : IGomoUserService {
+    override suspend fun getGomoUser(params: GetGomoUserParams): LfResult<GetGomoUserResult, GetGomoUserError> =
         withContext(Dispatchers.IO) {
             getGomoUserCall.execute(params)
         }

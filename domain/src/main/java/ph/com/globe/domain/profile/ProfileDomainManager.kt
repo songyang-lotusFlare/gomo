@@ -11,8 +11,8 @@ import javax.inject.Inject
 internal class ProfileDomainManager @Inject constructor(
     //useCase ...
     private val gomoUserUseCase: GomoUserUseCase
-): IProfileDomainManager {
-
-    override suspend fun getGomoUserCase(): Flow<LfResult<GomoUserModel?, GetGomoUserError>> = gomoUserUseCase.execute()
+) : IProfileDomainManager {
+    override suspend fun getGomoUserCase(): Flow<LfResult<GomoUserModel?, GetGomoUserError>> =
+        gomoUserUseCase.execute()
 }
 

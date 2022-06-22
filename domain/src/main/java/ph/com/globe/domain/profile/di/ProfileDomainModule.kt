@@ -10,7 +10,6 @@ import ph.com.globe.domain.profile.ProfileDomainManager
 @Module
 @InstallIn(SingletonComponent::class)
 internal interface ProfileDomainModule {
-
     @Binds
     fun providerProfileDomainManager(profileDomainManager: ProfileDomainManager): IProfileDomainManager
 }

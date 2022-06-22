@@ -14,13 +14,10 @@ import ph.com.globe.common.errors.profile.GetGomoUserError
 import ph.com.globe.data.db.IRepositoryManager
 import javax.inject.Inject
 
-
 internal class GomoUserUseCase @Inject constructor(repoManager: IRepositoryManager) {
-
     private val gomoUserRepo = repoManager.getGomoUserDataRepo()
 
-    suspend fun execute(): Flow<LfResult<GomoUserModel?, GetGomoUserError>>  =
-
+    suspend fun execute(): Flow<LfResult<GomoUserModel?, GetGomoUserError>> =
         gomoUserRepo.getGomoUser().map {
             LfResult.success(it)
         }

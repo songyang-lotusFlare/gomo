@@ -10,10 +10,8 @@ import javax.inject.Inject
 internal class GomoUserDataRepository @Inject constructor(
     private val gomoUserQueryDao: GomoUserQueryDao
     //todo: add network(manager) para to implement update between net and database
-): IGomoUserDataRepository{
-
+) : IGomoUserDataRepository {
     //todo: need update method
-
     override suspend fun getGomoUser(): Flow<GomoUserModel> =
         gomoUserQueryDao.getAllUser().map { it?.toDomain() }
 

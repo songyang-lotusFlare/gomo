@@ -7,7 +7,6 @@ import javax.inject.Inject
 internal class RepositoryManager @Inject constructor(
     private val gomoUserRepository: GomoUserDataRepository
     //todo: add more Dao
-): IRepositoryManager {
-
+) : IRepositoryManager {
     override fun getGomoUserDataRepo(): GomoUserDataRepository = gomoUserRepository
 }

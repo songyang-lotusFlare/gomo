@@ -6,6 +6,5 @@ import ph.com.globe.model.profile.response_models.GetGomoUserParams
 import ph.com.globe.model.profile.response_models.GetGomoUserResult
 
 interface IGomoUserService {
-
     suspend fun getGomoUser(params: GetGomoUserParams): LfResult<GetGomoUserResult, GetGomoUserError>
 }

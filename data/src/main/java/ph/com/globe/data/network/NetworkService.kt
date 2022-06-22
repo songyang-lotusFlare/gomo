@@ -5,7 +5,6 @@ import javax.inject.Inject
 
 internal class NetworkServices @Inject constructor(
     private val profileManager: GomoProfileService
-): INetworkService {
-
+) : INetworkService {
     override fun getProfileNetworkService(): GomoProfileService = profileManager
 }

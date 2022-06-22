@@ -5,7 +5,6 @@ import okhttp3.Headers
 
 
 sealed class NetworkError : Throwable() {
-
     data class Http(
         val httpStatusCode: Int,
         val errorResponse: ErrorResponse?,

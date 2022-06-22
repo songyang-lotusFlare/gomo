@@ -11,8 +11,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 internal interface RepositoryManagerModule {
-
     @Binds
     @Singleton
-    fun bindRepoManager(repositoryManager: RepositoryManager) : IRepositoryManager
+    fun bindRepoManager(repositoryManager: RepositoryManager): IRepositoryManager
 }

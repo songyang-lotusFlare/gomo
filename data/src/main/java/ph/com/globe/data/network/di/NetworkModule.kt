@@ -6,6 +6,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
+import ph.com.globe.data.network_components.NetworkStatusProvider
 import retrofit2.Retrofit
 import javax.inject.Qualifier
 import javax.inject.Singleton
@@ -33,7 +34,10 @@ annotation class BindTwoRetrofit
 @Module
 @InstallIn(SingletonComponent::class)
 internal class NetWorkModule {
-
+    @Singleton
+    @Provides
+    fun provideConnectivityInterceptor(networkStatusProvider: NetworkStatusProvider): ConnectivityInterceptor =
+        ConnectivityInterceptor(networkStatusProvider)
 
     //Interceptor
     @Singleton
@@ -79,7 +83,7 @@ internal class NetWorkModule {
 
 }
 
-object URL{
+object URL {
     const val BASE_URL: String = "www.gomo.com"
     const val SECOND_URL: String = "www.gomo1.com"
 }

@@ -1,7 +1,5 @@
 package ph.com.globe.model.profile.domin_models
 
-
-
 //assume wo need serial type
 
 data class GomoUserModel(
@@ -11,4 +9,3 @@ data class GomoUserModel(
     val gomoNumber: String,
     val phoneNumber: String? = null,
 )
-

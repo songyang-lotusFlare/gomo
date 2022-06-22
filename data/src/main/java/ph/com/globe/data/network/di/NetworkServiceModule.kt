@@ -11,7 +11,6 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 internal interface NetworkServiceModule {
-
     //manager
     @Singleton
     @Binds
