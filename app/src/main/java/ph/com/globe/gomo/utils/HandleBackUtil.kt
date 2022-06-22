@@ -1,11 +1,9 @@
 package ph.com.globe.gomo.utils
 
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import ph.com.globe.gomo.ui.base.BaseFragment
 
 object HandleBackUtil {
-
     fun handleBackPress(fragmentManager: FragmentManager?): Boolean {
         fragmentManager?.let {
             val fragments = it.fragments
@@ -21,7 +19,7 @@ object HandleBackUtil {
 
     private fun isFragmentBackHandled(fragment: BaseFragment): Boolean {
         return fragment.isVisible
-                && fragment.userVisibleHint
-                && fragment.onBackPressed()
+            && fragment.userVisibleHint
+            && fragment.onBackPressed()
     }
 }

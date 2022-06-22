@@ -2,39 +2,28 @@ package ph.com.globe.gomo.ui.base
 
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.Gravity
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.constraintlayout.widget.Group
-import androidx.lifecycle.Observer
-import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import ph.com.globe.gomo.databinding.ToolbarMainBinding
 import q.rorbin.badgeview.Badge
 import q.rorbin.badgeview.QBadgeView
 
 open class ToolbarFragment : BaseFragment() {
-
     private lateinit var qBadgeView: Badge
     protected lateinit var toolbarBinding: ToolbarMainBinding
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
 
     protected fun setToolbarBackListener(click: () -> Unit) {
-        toolbarBinding.toolbarBack.setOnClickListener{
+        toolbarBinding.toolbarBack.setOnClickListener {
             click.invoke()
         }
     }
 
     protected fun setMainSubToolbarTitle(mainTitle: String, subTitle: String) {
-
         with(toolbarBinding) {
             if (TextUtils.isEmpty(mainTitle) && TextUtils.isEmpty(subTitle)) {
                 groupDoubleTitle.visibility = View.GONE
@@ -42,7 +31,7 @@ open class ToolbarFragment : BaseFragment() {
                 groupSingleTitle.visibility = View.GONE
             } else if (TextUtils.isEmpty(mainTitle) || TextUtils.isEmpty(subTitle)) {
                 groupDoubleTitle.visibility = View.GONE
-                setToolbarTitle(if (TextUtils.isEmpty(mainTitle)) subTitle else mainTitle )
+                setToolbarTitle(if (TextUtils.isEmpty(mainTitle)) subTitle else mainTitle)
             } else {
                 groupSingleTitle.visibility = View.GONE
                 groupDoubleTitle.visibility = View.VISIBLE
@@ -65,8 +54,7 @@ open class ToolbarFragment : BaseFragment() {
     }
 
     // rightmost icon or only icon
-    protected fun setToolbarIcon(resId: Int, click: ()-> Unit) {
-
+    protected fun setToolbarIcon(resId: Int, click: () -> Unit) {
         toolbarBinding.toolbarImgRightmost.visibility = View.VISIBLE
         toolbarBinding.toolbarImgRightmost.setOnClickListener {
             click.invoke()
@@ -76,8 +64,16 @@ open class ToolbarFragment : BaseFragment() {
             .bindTarget(toolbarBinding.toolbarImgRightmost)
     }
 
-    // second icon
-    protected fun setMultiToolbarIcon(resIdRightmost: Int,clickOne: ()-> Unit, resIdSub: Int, clickTwo: () -> Unit) {
+    /**
+     * second one
+     * TODO: update params to the significant name
+     */
+    protected fun setMultiToolbarIcon(
+        resIdRightmost: Int,
+        clickOne: () -> Unit,
+        resIdSub: Int,
+        clickTwo: () -> Unit
+    ) {
         with(toolbarBinding) {
             toolbarImgRightmost.visibility = View.VISIBLE
             toolbarImgSub.visibility = View.VISIBLE
@@ -93,7 +89,6 @@ open class ToolbarFragment : BaseFragment() {
     }
 
     override fun onBackPressed(): Boolean {
-        findNavController().navigateUp()
-        return true
+        return findNavController().navigateUp()
     }
 }

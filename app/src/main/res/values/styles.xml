@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Common Alert Dialog-->
-    <style name="CommonAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+    <style name="CommonAlertDialogTheme" parent="Theme.Material3.Light.Dialog.Alert">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFrame">@null</item>

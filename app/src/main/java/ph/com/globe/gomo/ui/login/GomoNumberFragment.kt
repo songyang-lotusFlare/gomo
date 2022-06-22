@@ -7,13 +7,8 @@ import android.view.ViewGroup
 import ph.com.globe.gomo.databinding.FragmentGomoNumberBinding
 import ph.com.globe.gomo.ui.base.ToolbarFragment
 
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
 class GomoNumberFragment : ToolbarFragment() {
+
     private var param1: String? = null
     private var param2: String? = null
 
@@ -32,7 +27,13 @@ class GomoNumberFragment : ToolbarFragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentGomoNumberBinding.inflate(inflater, container, false)
-        // Inflate the layout for this fragment
         return binding.root
+    }
+
+    companion object {
+        // TODO: Rename parameter arguments, choose names that match
+        // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+        private const val ARG_PARAM1 = "param1"
+        private const val ARG_PARAM2 = "param2"
     }
 }
