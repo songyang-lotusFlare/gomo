@@ -1,7 +1,7 @@
 package ph.com.globe.model.profile.response_models
 
 import com.squareup.moshi.JsonClass
-import ph.com.globe.model.profile.domin_models.GomoUserModel
+import ph.com.globe.model.profile.domain_models.GomoUser
 
 // request params
 data class GetGomoUserParams(
@@ -30,8 +30,9 @@ data class GetGomoUserResult(
     val phoneNumber: String? = null,
 )
 
-fun GetGomoUserResult.toModel() =
-    GomoUserModel(
+//convert network response to domain object
+fun GetGomoUserResult.toUserDomain() =
+    GomoUser(
         name,
         sex,
         password,

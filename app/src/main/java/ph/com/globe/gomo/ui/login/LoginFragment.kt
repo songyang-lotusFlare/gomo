@@ -1,13 +1,11 @@
 package ph.com.globe.gomo.ui.login
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
-import ph.com.globe.domain.profile.ProfileDomainManager
 import ph.com.globe.gomo.R
 import ph.com.globe.gomo.databinding.FragmentLoginBinding
 import ph.com.globe.gomo.ui.base.BaseFragment
@@ -16,16 +14,12 @@ import ph.com.globe.gomo.utils.PatternUtil
 import ph.com.globe.gomo.utils.applicationViewModels
 import ph.com.globe.gomo.utils.safeNavigate
 import java.util.regex.Pattern
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class LoginFragment : BaseFragment() {
     val userViewModel: UserViewModel by applicationViewModels()
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
-
-    @Inject
-    lateinit var profileModuleManager: ProfileDomainManager
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,7 +35,6 @@ class LoginFragment : BaseFragment() {
     }
 
     private fun initView() {
-        Log.d("hynl", "initView: ${profileModuleManager}")
         binding.btnLoginGo.setOnClickListener {
             if (!Pattern.matches(PatternUtil.REGEX_G_NO, binding.etLoginInput.text.toString())) {
                 //toast

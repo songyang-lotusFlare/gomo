@@ -39,34 +39,28 @@ dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$project.kotlinVersion"
     implementation "androidx.core:core-ktx:$project.ktxVersion"
-    implementation 'androidx.appcompat:appcompat:1.3.0'
-    implementation 'com.google.android.material:material:1.4.0'
-
     //room
-    kapt "androidx.room:room-compiler:$rootProject.roomVersion"
-    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
-    implementation "androidx.room:room-ktx:$rootProject.roomVersion"
+    kapt "androidx.room:room-compiler:$project.roomVersion"
+    implementation "androidx.room:room-runtime:$project.roomVersion"
+    implementation "androidx.room:room-ktx:$project.roomVersion"
 //    kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
     //hilt
-    kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
-    implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
-
+    kapt "com.google.dagger:hilt-android-compiler:$project.hiltVersion"
+    implementation "com.google.dagger:hilt-android:$project.hiltVersion"
     //retrofit2
-    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttpLoggingVersion"
-    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
-    implementation "com.squareup.retrofit2:converter-moshi:$rootProject.retrofitVersion"
-    implementation "com.squareup.retrofit2:converter-scalars:$rootProject.retrofitVersion"
-
+    implementation "com.squareup.okhttp3:logging-interceptor:$project.okhttpVersion"
+    implementation "com.squareup.retrofit2:retrofit:$project.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$project.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-scalars:$project.retrofitVersion"
     //dataStore
-    implementation "androidx.datastore:datastore-preferences:1.0.0"
-    implementation "androidx.datastore:datastore-preferences-core:1.0.0"
-    implementation 'androidx.datastore:datastore-core:1.0.0'
-
+    implementation "androidx.datastore:datastore-preferences:$project.datastoreVersion"
+    implementation "androidx.datastore:datastore-preferences-core:$project.datastoreVersion"
+    implementation "androidx.datastore:datastore-core:$project.datastoreVersion"
     // Moshi
-    implementation "com.squareup.moshi:moshi:$rootProject.moshiVersion"
-    kapt "com.squareup.moshi:moshi-kotlin-codegen:$rootProject.moshiVersion"
+    implementation "com.squareup.moshi:moshi:$project.moshiVersion"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$project.moshiVersion"
 
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    testImplementation "junit:junit:$project.junitVersion"
+    androidTestImplementation "androidx.test.ext:junit:$project.testExtJunit"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$project.espressoVersion"
 }

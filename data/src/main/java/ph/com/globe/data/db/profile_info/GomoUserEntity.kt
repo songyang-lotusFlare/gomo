@@ -2,7 +2,7 @@ package ph.com.globe.data.db.profile_info
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import ph.com.globe.model.profile.domin_models.GomoUserModel
+import ph.com.globe.model.profile.domain_models.GomoUser
 import ph.com.globe.model.profile.response_models.GetGomoUserResult
 
 @Entity(tableName = GomoUserEntity.TABLE_NAME)
@@ -19,7 +19,8 @@ data class GomoUserEntity(
     }
 }
 
-fun GetGomoUserResult.toEntity() =
+//convert network response to db entity
+fun GetGomoUserResult.toUserEntity() =
     GomoUserEntity(
         name,
         sex,
@@ -28,9 +29,9 @@ fun GetGomoUserResult.toEntity() =
         phoneNumber
     )
 
-//
-fun GomoUserEntity.toDomain() =
-    GomoUserModel(
+//convert db entity to domain object
+fun GomoUserEntity.toUserDomain() =
+    GomoUser(
         name,
         sex,
         password,

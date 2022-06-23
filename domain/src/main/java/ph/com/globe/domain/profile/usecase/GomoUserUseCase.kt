@@ -6,7 +6,7 @@
 
 package ph.com.globe.domain.profile.usecase
 
-import ph.com.globe.model.profile.domin_models.GomoUserModel
+import ph.com.globe.model.profile.domain_models.GomoUser
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import ph.com.globe.common.LfResult
@@ -17,7 +17,7 @@ import javax.inject.Inject
 internal class GomoUserUseCase @Inject constructor(repoManager: RepositoryManager) {
     private val gomoUserRepo = repoManager.getGomoUserDataRepo()
 
-    suspend fun execute(): Flow<LfResult<GomoUserModel?, GetGomoUserError>> =
+    suspend fun execute(): Flow<LfResult<GomoUser?, GetGomoUserError>> =
         gomoUserRepo.getGomoUser().map {
             LfResult.success(it)
         }
