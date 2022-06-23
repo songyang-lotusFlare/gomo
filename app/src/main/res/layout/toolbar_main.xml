@@ -14,7 +14,7 @@
         android:paddingStart="@dimen/margin_new_tiny"
         android:paddingEnd="@dimen/margin_new_tiny"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_back_red" />
 
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/toolbar_back"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_back"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Single Title" />
 
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white_light"
         app:layout_constraintBottom_toTopOf="@+id/toolbar_sub_title"
-        app:layout_constraintLeft_toRightOf="@+id/toolbar_back"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
         tools:text="Main title" />
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white_light"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/toolbar_back"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_back"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_main_title"
         tools:text="Sub title" />
 
@@ -57,7 +57,7 @@
         android:contentDescription="@string/image_desc"
         android:padding="@dimen/margin_new_base"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/toolbar_img_rightmost"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar_img_rightmost"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_menu_like" />
 
@@ -69,7 +69,7 @@
         android:contentDescription="@string/image_desc"
         android:padding="@dimen/margin_new_base"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_menu_shop" />
 

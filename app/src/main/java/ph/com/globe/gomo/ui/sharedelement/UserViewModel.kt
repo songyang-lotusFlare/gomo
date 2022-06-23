@@ -19,7 +19,7 @@ class UserViewModel @Inject constructor() : ViewModel() {
     lateinit var profileDomainManager: ProfileDomainManager
 
     private val _gomoUser = MutableLiveData<GomoUser>()
-    var gomoUser: LiveData<GomoUser> = _gomoUser
+    val gomoUser: LiveData<GomoUser> = _gomoUser
 
     private fun getGomoUser() = viewModelScope.launch {
         profileDomainManager.getGomoUser().collect {
