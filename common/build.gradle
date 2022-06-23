@@ -13,5 +13,5 @@ dependencies {
     // Moshi
     implementation "com.squareup.moshi:moshi:$project.moshiVersion"
     kapt "com.squareup.moshi:moshi-kotlin-codegen:$project.moshiVersion"
-    implementation "com.squareup.okhttp3:okhttp:4.9.3"
+    implementation "com.squareup.okhttp3:okhttp:$project.okhttpVersion"
 }

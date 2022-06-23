@@ -40,71 +40,56 @@ android {
 
 dependencies {
 
-
-    implementation project(':domain')
+    implementation project(":domain")
     implementation project(":data")
-
+    implementation project(":model")
+    implementation project(":common")
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
-    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
-    implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
-    implementation "androidx.activity:activity-ktx:1.4.0"
-    implementation "androidx.fragment:fragment-ktx:$rootProject.fragmentVersion"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycleVersion"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
-    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
-    implementation "com.google.android.material:material:$rootProject.materialVersion"
-    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
-    implementation "androidx.profileinstaller:profileinstaller:$rootProject.profileInstallerVersion"
-    implementation "androidx.tracing:tracing-ktx:$rootProject.tracingVersion"
+    implementation "androidx.appcompat:appcompat:$project.appCompatVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$project.constraintLayoutVersion"
+    implementation "androidx.core:core-ktx:$project.ktxVersion"
+    implementation "androidx.activity:activity-ktx:$project.activityVersion"
+    implementation "androidx.fragment:fragment-ktx:$project.fragmentVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$project.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$project.lifecycleVersion"
+    implementation "com.github.bumptech.glide:glide:$project.glideVersion"
+    implementation "com.google.android.material:material:$project.materialVersion"
+    implementation "com.google.code.gson:gson:$project.gsonVersion"
+    implementation "androidx.profileinstaller:profileinstaller:$project.profileInstallerVersion"
+    implementation "androidx.tracing:tracing-ktx:$project.tracingVersion"
     //coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVersion"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$project.coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$project.coroutinesVersion"
     //splash
-    implementation 'androidx.core:core-splashscreen:1.0.0-rc01'
-    implementation 'androidx.databinding:databinding-runtime:4.2.2'
-    //room
-    kapt "androidx.room:room-compiler:$rootProject.roomVersion"
-    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
-    implementation "androidx.room:room-ktx:$rootProject.roomVersion"
-    kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
+    implementation "androidx.core:core-splashscreen:$project.splashVersion"
     //hilt
-    kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
-    implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
-
+    kapt "com.google.dagger:hilt-android-compiler:$project.hiltVersion"
+    implementation "com.google.dagger:hilt-android:$project.hiltVersion"
     //navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
-    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
+    implementation "androidx.navigation:navigation-fragment-ktx:$project.navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$project.navigationVersion"
     //paging
-    implementation "androidx.paging:paging-runtime-ktx:$rootProject.pagingVersion"
+    implementation "androidx.paging:paging-runtime-ktx:$project.pagingVersion"
     //viewpager2
-    implementation "androidx.viewpager2:viewpager2:$rootProject.viewPagerVersion"
+    implementation "androidx.viewpager2:viewpager2:$project.viewPagerVersion"
     //work
-    implementation "androidx.work:work-runtime-ktx:$rootProject.workVersion"
-    //retrofit2
-    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttpLoggingVersion"
-    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
-    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "androidx.work:work-runtime-ktx:$project.workVersion"
     //dataStore
-    implementation "androidx.datastore:datastore-preferences:1.0.0"
-    implementation "androidx.datastore:datastore-preferences-core:1.0.0"
-    implementation 'androidx.datastore:datastore-core:1.0.0'
+    implementation "androidx.datastore:datastore-preferences:$project.datastoreVersion"
+    implementation "androidx.datastore:datastore-preferences-core:$project.datastoreVersion"
+    implementation "androidx.datastore:datastore-core:$project.datastoreVersion"
     //progress bar
-    implementation 'com.wang.avi:library:2.1.3'
+    implementation "com.wang.avi:library:$project.processBarVersion"
     //BadgeView
-    implementation 'q.rorbin:badgeview:1.1.3'
-
+    implementation "q.rorbin:badgeview:$project.badgeviewVersion"
     //firebase
     // Import the BoM for the Firebase platform
     implementation platform('com.google.firebase:firebase-bom:30.0.1')
-
     // Declare the dependencies for the Crashlytics and Analytics libraries
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
     implementation 'com.google.firebase:firebase-analytics-ktx'
-
-
 
     // Testing dependencies
     kaptAndroidTest "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
@@ -120,5 +105,4 @@ dependencies {
     androidTestImplementation "com.google.dagger:hilt-android-testing:$rootProject.hiltVersion"
     androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$rootProject.coroutinesVersion"
     testImplementation "junit:junit:$rootProject.junitVersion"
-
 }
