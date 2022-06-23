@@ -24,6 +24,5 @@ internal class GomoUserDataRepositoryImpl @Inject constructor(
     override suspend fun getGomoUser(): Flow<GomoUser> =
         gomoUserQueryDao.getAllUser().map { it.toUserDomain() }
 
-
     //todo: more method for demand
 }
