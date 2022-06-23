@@ -6,6 +6,8 @@
 
 package ph.com.globe.common
 
+import ph.com.globe.common.errors.profile.GetGomoUserError
+
 /**
  * Used to wrap results of an operation that can be successful or unsuccessful.
  * At least one of the values (value or error) must be non-null.

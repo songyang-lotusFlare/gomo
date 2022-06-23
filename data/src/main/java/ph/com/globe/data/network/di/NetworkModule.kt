@@ -1,11 +1,13 @@
-package ph.com.globe.data.network
+package ph.com.globe.data.network.di
 
-import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
+import ph.com.globe.data.network.ConnectivityInterceptor
+import ph.com.globe.data.network.DemoInterceptor
+import ph.com.globe.data.network.profile.ProfileApiService
 import ph.com.globe.data.network_components.NetworkStatusProvider
 import retrofit2.Retrofit
 import javax.inject.Qualifier
@@ -81,10 +83,15 @@ internal class NetWorkModule {
             .client(okHttpClient)
             .build()
 
+    @Singleton
+    @Provides
+    fun providerProfileApiService(@BindOneRetrofit retrofit: Retrofit): ProfileApiService =
+        retrofit.create(ProfileApiService::class.java)
+
 }
 
 object URL {
-    const val BASE_URL: String = "www.gomo.com"
-    const val SECOND_URL: String = "www.gomo1.com"
+    const val BASE_URL: String = "http://www.gomo.com"
+    const val SECOND_URL: String = "http://www.gomo1.com"
 }
 
